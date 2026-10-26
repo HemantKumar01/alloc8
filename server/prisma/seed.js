@@ -26,16 +26,18 @@ main()
                 console.log(
                   `${hostel}${block}-${room.toString().padStart(3, "0")}-${batch}`
                 );
+                const roomNum = room.toString().padStart(3, "0");
+                const roomId = `${hostel}${block}-${roomNum}-${batch}`;
                 data.add(
                   {
+                    roomId,
                     hostel,
-                    block,
                     gender,
                     floor,
-                    roomNum: `${room.toString().padStart(3, "0")}`,
+                    roomNum,
                     batch,
                     capacity,
-                    occupancy: 0,
+                    numFilled: 0,
                     students: [],
                     roommateCode: null,
                   }

@@ -2,7 +2,7 @@ import express from "express";
 import nonfresherController from "../controller/nonfresherController.js";
 const router = express.Router();
 import jwt from "jsonwebtoken";
-import emailmap from "../../data-gen/email_map.json" with { type: "json" };
+import studentConfig from "../../data-gen/roll_numbers.json" with { type: "json" };
 
 router.use(async (req, res, next) => {
   const token = req.get("X-Alloc8-IDToken");
@@ -24,23 +24,24 @@ router.use(async (req, res, next) => {
     if (keys[i].kid == kid) break;
   }
   try {
-    const jwt = jwt.verify(token, pems[i], {
+    const decoded = jwt.verify(token, pems[i], {
       algorithms: "RS256",
       audience: process.env.AUDIENCE,
       issuer:
         "https://login.microsoftonline.com/a57f7d92-038e-4d4c-8265-7cd2beb33b34/v2.0",
     });
 
-    let email = jwt.email;
-    if (!Object.keys(emailmap).includes(email) && emailmap[email]["rollNumber"].startsWith("24")) {
-        console.error("Invalid email: ", email);
-        res.status(401).json({ error: "Invalid email" });
+    let email = decoded.email;
+    let rollnum = email.split("@")[0].split("_").find(p => p.startsWith("2"));
+    if (!rollnum || !studentConfig.rollNumbers.includes(rollnum)) {
+        console.error("Invalid roll number for email: ", email);
+        res.status(401).json({ error: "You are not eligible for this allocation" });
         return;
     }
-    res.locals.batch = emailmap[email]["batch"]
-    res.locals.gender = emailmap[email]["gender"]
-    res.locals.rollNumber = emailmap[email]["rollNumber"]
-    res.locals.name = jwt.name;
+    res.locals.batch = studentConfig.batch;
+    res.locals.gender = studentConfig.gender;
+    res.locals.rollNumber = rollnum;
+    res.locals.name = decoded.name;
     next();
   } catch (e) {
     console.error(e);

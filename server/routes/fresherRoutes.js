@@ -15,6 +15,7 @@ router.use(async (req, res, next) => {
     const myjwt = jwt.decode(token, { complete: true })
     if (myjwt == null) {
       res.sendStatus(401);
+      return;
     }
     const kid = myjwt.header.kid;
     let i;
@@ -25,7 +26,7 @@ router.use(async (req, res, next) => {
         req.auth = jwt.verify(token, pems[i], {
             algorithms: "RS256",
             /* TODO: add these to config.json - pranjal */
-            audience: "35a0637a-3118-4cc3-9180-30f6beae3a5d",
+            audience: process.env.AUDIENCE,
             issuer: "https://login.microsoftonline.com/a57f7d92-038e-4d4c-8265-7cd2beb33b34/v2.0",
         });
         let email = req.auth.preferred_username;

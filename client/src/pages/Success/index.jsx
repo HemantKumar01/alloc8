@@ -26,7 +26,7 @@ const SuccessPage = () => {
     }).catch(async (error) => {
       if (error instanceof InteractionRequiredAuthError) {
         // fallback to interaction when silent call fails
-        return msalInstance.acquireTokenRedirect(request);
+        return instance.acquireTokenRedirect(request);
       } else if (error instanceof BrowserAuthError) {
         navigate("/");
         return;

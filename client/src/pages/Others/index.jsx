@@ -20,7 +20,7 @@ import {
 
 import { useEffect, useState } from "react";
 import hostel_data from "@/../../data-gen/available_rooms.json";
-import emailmap from "@/../../data-gen/email_map.json";
+import studentConfig from "@/../../data-gen/roll_numbers.json";
 import Spinner from "@/components/spinner";
 import {
   Dialog,
@@ -441,6 +441,7 @@ const FloorAndRoom = ({
 };
 const OthersRoomAllocPage = () => {
   const { instance } = useMsal();
+  const navigate = useNavigate();
   const [idToken, setIdToken] = useState();
   const [ name, setName ] = useState();
   const [ availableRooms, setAvailableRooms ] = useState([]);
@@ -450,12 +451,11 @@ const OthersRoomAllocPage = () => {
     instance.acquireTokenSilent(request).then(tokenResponse => {
       setIdToken(tokenResponse.idToken);
       setName(tokenResponse.idTokenClaims.name);
-      const { batch, gender } = emailmap[tokenResponse.idTokenClaims.email];
-      setAvailableRooms(hostel_data[batch][gender]["hostels"]);
+      setAvailableRooms(hostel_data[studentConfig.batch][studentConfig.gender]["hostels"]);
     }).catch(async (error) => {
       if (error instanceof InteractionRequiredAuthError) {
         // fallback to interaction when silent call fails
-        return msalInstance.acquireTokenRedirect(request);
+        return instance.acquireTokenRedirect(request);
       } else if (error instanceof BrowserAuthError) {
         navigate("/");
         return;

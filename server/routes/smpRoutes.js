@@ -16,6 +16,7 @@ router.use(async (req, res, next) => {
   const myjwt = jwt.decode(token, { complete: true })
   if (myjwt == null) {
     res.sendStatus(401);
+    return;
   }
   const kid = myjwt.header.kid;
   let i;

@@ -32,12 +32,15 @@ client/*.njsproj
 client/*.sln
 client/*.sw?
 
-client/src/authConfig.js
+# authConfig.js now reads from VITE_ env vars — safe to commit
 
 ## server/
 
 */.ipynb_checkpoints
 data-gen/*.json
-
+shush.csv
+room_allocation_details.pdf
 # Clustered Data
 */data/*
+generate_pdf.js
+check_dups.py
