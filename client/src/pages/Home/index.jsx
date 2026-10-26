@@ -32,7 +32,7 @@ const HomePage = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate("/getSMP");
+      navigate("/allotroom");
     }
   }, [isAuthenticated]);
 
