@@ -34,7 +34,7 @@ import {
 import { useNavigate } from "react-router";
 import Footer from "@/components/Footer";
 import { useMsal } from "@azure/msal-react";
-import { BrowserAuthError, InteractionRequiredAuthError } from "@azure/msal-browser";
+import { BrowserAuthError, InteractionRequiredAuthError, InteractionStatus } from "@azure/msal-browser";
 import { getName } from "@/lib/auth_utility";
 
 const steps = [
@@ -442,31 +442,68 @@ const FloorAndRoom = ({
   );
 };
 const OthersRoomAllocPage = () => {
-  const { instance } = useMsal();
+  const { instance, inProgress } = useMsal();
   const navigate = useNavigate();
   const [idToken, setIdToken] = useState();
   const [ name, setName ] = useState();
   const [ availableRooms, setAvailableRooms ] = useState([]);
-  const request = { scopes: [] };
+  const [checkingAllocation, setCheckingAllocation] = useState(true);
+  const [allocationError, setAllocationError] = useState("");
+  const [allocationCheckAttempt, setAllocationCheckAttempt] = useState(0);
 
   useEffect(() => {
-    instance.acquireTokenSilent(request).then(tokenResponse => {
-      setIdToken(tokenResponse.idToken);
-      setName(tokenResponse.idTokenClaims.name);
-      setAvailableRooms(buildHostelOptions(hostel_data[studentConfig.batch][studentConfig.gender]["hostels"]));
-    }).catch(async (error) => {
-      if (error instanceof InteractionRequiredAuthError) {
-        // fallback to interaction when silent call fails
-        return instance.acquireTokenRedirect(request);
-      } else if (error instanceof BrowserAuthError) {
-        navigate("/");
-        return;
-      }
+    if (inProgress !== InteractionStatus.None) return;
+    const controller = new AbortController();
+    const request = { scopes: [] };
+    setCheckingAllocation(true);
+    setAllocationError("");
 
-      // handle other errors
-      console.log(error);
-    });
-  }, [instance]);
+    const checkAllocation = async () => {
+      try {
+        const tokenResponse = await instance.acquireTokenSilent(request);
+        if (controller.signal.aborted) return;
+        setIdToken(tokenResponse.idToken);
+        setName(tokenResponse.idTokenClaims.name);
+
+        const response = await fetch(
+          `${import.meta.env.VITE_SERVER_URL}/api/nonfresher/allocated-details`,
+          { headers: { "X-Alloc8-IDToken": tokenResponse.idToken }, signal: controller.signal },
+        );
+        if (!response.ok && response.status !== 404) {
+          throw new Error("Could not check your room allocation. Please try again.");
+        }
+        const allocation = await response.json();
+        if (controller.signal.aborted) return;
+        if (response.ok && typeof allocation.room === "string" && allocation.room) {
+          navigate("/success", { replace: true });
+          return;
+        }
+        if (response.status !== 404 || allocation.code !== "NO_ALLOCATION") {
+          throw new Error("Could not check your room allocation. Please try again.");
+        }
+        setAvailableRooms(buildHostelOptions(hostel_data[studentConfig.batch][studentConfig.gender]["hostels"]));
+        setCheckingAllocation(false);
+      } catch (error) {
+        if (controller.signal.aborted) return;
+        if (error instanceof InteractionRequiredAuthError) {
+          try {
+            await instance.acquireTokenRedirect(request);
+            return;
+          } catch {
+            // Show the retry state if Microsoft sign-in cannot start.
+          }
+        } else if (error instanceof BrowserAuthError) {
+          navigate("/", { replace: true });
+          return;
+        }
+        if (controller.signal.aborted) return;
+        setAllocationError("Could not check your room allocation. Please try again.");
+        setCheckingAllocation(false);
+      }
+    };
+    checkAllocation();
+    return () => controller.abort();
+  }, [instance, inProgress, navigate, allocationCheckAttempt]);
   let [activeStep, setActiveStep] = useState(0);
   const [hostel, setHostel] = useState("");
   // const [floor, setFloor] = useState(0);
@@ -509,6 +546,16 @@ const OthersRoomAllocPage = () => {
   return (
     <div className="bg-[#f1f5f9] h-full w-full">
       <Header name={name}></Header>
+      {checkingAllocation ? (
+        <div role="status" className="p-10 text-center">Checking your room allocation…</div>
+      ) : allocationError ? (
+        <div className="p-10 text-center">
+          <p role="alert" className="mb-4 text-red-700">{allocationError}</p>
+          <Button type="button" onClick={() => setAllocationCheckAttempt(attempt => attempt + 1)}>
+            Try again
+          </Button>
+        </div>
+      ) : <>
       <div style={{ fontFamily: "sans-serif" }} className="bg-[#f1f5f9]">
         <Stepper
           steps={steps}
@@ -517,6 +564,7 @@ const OthersRoomAllocPage = () => {
         />
       </div>
       <div className="px-5">{getComponent()}</div>
+      </>}
       <Footer></Footer>
     </div>
   );

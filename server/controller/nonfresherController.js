@@ -25,13 +25,17 @@ async function showDetails(req, res) {
     const student = await prisma.students.findUnique({
       where: { rollnum: rollnum },
     });
-    if (!student) {
-      res.status(500).json({ error: "Student not found" });
+    if (!student || !student.allocated) {
+      res.status(404).json({ code: "NO_ALLOCATION", error: "No room allocated yet" });
       return;
     }
     const room = await prisma.rooms.findUnique({
       where: { roomId: student.room },
     });
+    if (!room) {
+      res.status(500).json({ error: "The allocated room could not be found" });
+      return;
+    }
 
     if (room.roommateCode && room.roommateCode.length != 0) {
       const codeGeneratedAt = new Date(room.codeGeneratedAt);
