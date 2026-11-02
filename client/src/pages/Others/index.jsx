@@ -489,7 +489,7 @@ const OthersRoomAllocPage = () => {
         return (
           <FloorAndRoom
             activeStep={1}
-            data={availableRooms[hostel.toLowerCase()]}
+            data={availableRooms[hostel]}
             hostel={hostel}
             idToken={idToken}
             onPrev={() => {
