@@ -58,6 +58,7 @@ const HomePage = () => {
         <form className="w-full">
           <div className="w-full flex justify-center items-center mt-8">
             <Button
+              type="button"
               onClick={initializeSignIn}
               className="flex items-center justify-center font-segoe-ui font-light text-[15px] bg-[#2f2f2f] text-white h-[45px] px-4 rounded-sm hover:bg-[#0e0202] transition duration-300 "
             >
