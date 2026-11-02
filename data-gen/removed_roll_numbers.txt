@@ -8,7 +8,6 @@ Removed Roll Numbers (Combined)
 2301CS04
 2301CS09
 2301CS53
-2301CS66
 2301CS77
 2301EE17
 2301EE33
@@ -26,6 +25,41 @@ Removed Roll Numbers (Combined)
 
 --- Batch 3 (removed from roll_numbers.json) ---
 2301ME42
+
+--- Batch 4 (removed from roll_numbers.json) ---
+2301AI57
+2301CS02
+2301CS05
+2301CS51
+2301CT10
+2301CT28
+2301EC22
+2301MC14
+2301ME39
+2302CS03
+2302GT02
+2301AI48 (was not in roll_numbers.json)
+2301EC43 (was not in roll_numbers.json)
+2301EE60 (already removed previously)
+
+--- Batch 5 (removed from roll_numbers.json) ---
+2301AI02
+2301AI21
+2301AI29
+2301AI39
+2301CB02
+2301CB04
+2301CS08
+2301CS21
+2301CS35
+2301EC07
+2301EC25
+2301EC45
+2301EC50
+2301ME15
+2301ME23
+2301PH21
+2302MC12
 
 --- Batch 2 (were already not in roll_numbers.json) ---
 2301AI08
