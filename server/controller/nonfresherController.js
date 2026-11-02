@@ -3,6 +3,8 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 const redis = new Redis();
 import crypto from "crypto";
+import availableRooms from "../../data-gen/available_rooms.json" with { type: "json" };
+import { buildRoomFilter } from "../../shared/roomSelection.mjs";
 
 const codeExpiryDelta = 10 * 60000;
 
@@ -81,29 +83,24 @@ async function showDetails(req, res) {
 }
 
 async function getRoom(req, res) {
-  let { hostel, floor } = req.body;
-  if (hostel == undefined || floor == undefined) {
-    res.sendStatus(422);
+  const where = buildRoomFilter(availableRooms, {
+    hostel: req.body.hostel,
+    block: req.body.block,
+    floor: req.body.floor,
+    batch: res.locals.batch,
+    gender: res.locals.gender,
+  });
+  if (!where) {
+    res.status(422).json({ error: "Please select a valid hostel block and floor" });
     return;
   }
-  let batch = res.locals.batch;
-  let gender = res.locals.gender;
 
-  // console.log("Getting rooms for batch:", batch);
   try {
     const validRooms = await prisma.rooms.findMany({
       omit: {
         roommateCode: true,
       },
-      where: {
-        AND: [
-          { batch: batch },
-          { gender: gender },
-          { hostel: hostel },
-          { floor: floor },
-          // { numFilled: { lt: prisma.rooms.fields.capacity } },
-        ],
-      },
+      where,
     });
     let i;
     for (i = 0; i < validRooms.length; i++) {

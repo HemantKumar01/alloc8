@@ -21,6 +21,7 @@ import {
 import { useEffect, useState } from "react";
 import hostel_data from "@/../../data-gen/available_rooms.json";
 import studentConfig from "@/../../data-gen/roll_numbers.json";
+import { buildHostelOptions } from "../../../../shared/roomSelection.mjs";
 import Spinner from "@/components/spinner";
 import {
   Dialog,
@@ -207,8 +208,8 @@ const FloorAndRoom = ({
   hostel,
   idToken
 }) => {
-  const floors = Object.keys(data);
-  const [floor, setFloor] = useState(0);
+  const floors = data.floors;
+  const [floor, setFloor] = useState("");
   const [loading, setLoading] = useState(false);
   // const [rooms, setRooms] = useState([]);
   const [roomData, setRoomData] = useState([]);
@@ -223,7 +224,8 @@ const FloorAndRoom = ({
       return;
     }
     const postBody = {
-      hostel: hostel.toLowerCase(),
+      hostel: data.hostel,
+      block: data.block,
       floor: floor.toString(),
     };
 
@@ -309,7 +311,7 @@ const FloorAndRoom = ({
           id="floor"
           name="floor"
           onValueChange={(value) => {
-            // setRooms(data[value]);
+            setRoomData([]);
             setFloor(value);
           }}
         >
@@ -451,7 +453,7 @@ const OthersRoomAllocPage = () => {
     instance.acquireTokenSilent(request).then(tokenResponse => {
       setIdToken(tokenResponse.idToken);
       setName(tokenResponse.idTokenClaims.name);
-      setAvailableRooms(hostel_data[studentConfig.batch][studentConfig.gender]["hostels"]);
+      setAvailableRooms(buildHostelOptions(hostel_data[studentConfig.batch][studentConfig.gender]["hostels"]));
     }).catch(async (error) => {
       if (error instanceof InteractionRequiredAuthError) {
         // fallback to interaction when silent call fails
