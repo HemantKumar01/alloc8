@@ -132,7 +132,7 @@ const SuccessPage = () => {
                 <b>Roll No.: </b> <AuthenticatedTemplate>{getRollNumber(idTokenClaims).toUpperCase()}</AuthenticatedTemplate>
               </div>
               <div>
-                <b>Hostel: </b> {studData?.hostel}
+                <b>Hostel: </b> {studData?.room?.split("-")[0] || studData?.hostel}
               </div>
               <div>
                 <b>Room No.: </b> {studData?.roomNum}
