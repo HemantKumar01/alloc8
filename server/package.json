@@ -4,8 +4,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "prebook": "node scripts/prebook-rooms.mjs",
-    "test:prebook": "node --test scripts/prebook-rooms.test.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
