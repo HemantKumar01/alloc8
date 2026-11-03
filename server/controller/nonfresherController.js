@@ -5,6 +5,7 @@ const redis = new Redis();
 import crypto from "crypto";
 import availableRooms from "../../data-gen/available_rooms.json" with { type: "json" };
 import { buildRoomFilter } from "../../shared/roomSelection.mjs";
+import { createRequestAudit, createStepLogger, formLogData, formatTimestampIST } from "../lib/formLogging.js";
 
 const codeExpiryDelta = 10 * 60000;
 
@@ -75,6 +76,7 @@ async function showDetails(req, res) {
         occupancy: student.occupancy,
         roommates,
         roommateCode: room.roommateCode,
+        bookingTimestampIST: student.bookingTimestampIST ?? null,
       });
     } else {
       res.status(400).json({ error: "kindly wait for allocation!" });
@@ -237,6 +239,7 @@ async function roomBooking(req, res) {
           },
         });
 
+        const bookedAt = new Date();
         await prisma.students.create({
           data: {
             rollnum: studentId,
@@ -248,7 +251,11 @@ async function roomBooking(req, res) {
             occupancy: room.capacity,
             gender: gender,
             batch: batch,
+            bookingTimestampIST: formatTimestampIST(bookedAt),
           },
+        });
+        await prisma.formLogs.create({
+          data: formLogData(req, res, "booking_succeeded", "room", { roomId }, bookedAt),
         });
       });
 
@@ -266,6 +273,8 @@ async function roomBooking(req, res) {
 }
 
 export default {
+  logStep: createStepLogger(prisma),
+  auditRequest: (event, step) => createRequestAudit(prisma, event, step),
   showDetails,
   getRoom,
   roomBooking,

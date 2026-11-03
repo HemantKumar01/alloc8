@@ -44,3 +44,6 @@ room_allocation_details.pdf
 */data/*
 generate_pdf.js
 check_dups.py
+
+server/scripts/prebook-rooms.test.mjs
+server/scripts/prebook-rooms.mjs
