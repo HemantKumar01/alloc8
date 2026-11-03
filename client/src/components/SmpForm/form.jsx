@@ -22,7 +22,7 @@ import Radio_Section from "./radio_group";
 import Dropdown_Section from "./dropdown_group";
 import { getName, getRollNumber } from "@/lib/auth_utility";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router";
+import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
 
 
 export default function SMP_Form({ idTokenClaims, submitAction }) {

@@ -1,4 +1,6 @@
+import { useLocation } from "react-router";
 const Error = () => {
+  const { search } = useLocation();
   return (
     <div className="h-screen w-screen grid place-content-center bg-slate-200 text-black">
       <div className="w-[500px] max-w-[90vw] p-10 flex flex-col justify-center items-center bg-white rounded-lg text-center">
@@ -7,7 +9,7 @@ const Error = () => {
         </h1>
         <p>
           Go to{" "}
-          <a href="/" className="text-blue-700 underline">
+          <a href={`/${search}`} className="text-blue-700 underline">
             Home Page
           </a>{" "}
           and try again.

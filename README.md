@@ -11,6 +11,8 @@ npm install
 npm run dev
 ```
 
+Open the frontend with `?pass=DkMkC` (for example, `http://localhost:5173/?pass=DkMkC`). Every route requires this case-sensitive URL parameter; internal navigation preserves it. This frontend gate does not replace backend authentication.
+
 Deploy with:
 
 ```sh

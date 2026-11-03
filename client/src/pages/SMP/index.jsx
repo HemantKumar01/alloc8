@@ -2,7 +2,7 @@ import { getName, getRollNumber } from "@/lib/auth_utility";
 import Spinner from "@/components/spinner";
 import Header from "@/components/Header";
 import { useEffect, useState, useRef } from "react";
-import { useNavigate } from "react-router";
+import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
 import Footer from "@/components/Footer";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";

@@ -2,47 +2,24 @@ import { Button } from "@/components/ui/button";
 import msLogo from "../../assets/ms_logo.svg";
 import logo from "../../assets/logo.png";
 import Footer from "@/components/Footer";
-import { useState, useEffect } from "react";
-import { useNavigate, useLocation, Link } from "react-router";
+import { useEffect } from "react";
+import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
 import { useIsAuthenticated, useMsal } from "@azure/msal-react";
-import { useSearchParams } from "react-router";
-
-async function digestMessage(message) {
-  const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
-  const hashBuffer = await window.crypto.subtle.digest("SHA-512", msgUint8); // hash the message
-  const hashArray = Array.from(new Uint8Array(hashBuffer)); // convert buffer to byte array
-  const hashHex = hashArray
-    .map((b) => b.toString(16).padStart(2, "0"))
-    .join(""); // convert bytes to hex string
-  return hashHex;
-}
 
 const HomePage = () => {
   const navigate = useNavigate();
 
   const isAuthenticated = useIsAuthenticated();
   const { instance, accounts } = useMsal();
-  const { search } = useLocation();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [digestHex, setDigestHex] = useState("");
-
-  useEffect(() => {
-    digestMessage(searchParams.get("pass") || "").then((digestHex) => setDigestHex(digestHex));
-  }, [searchParams]);
-
   useEffect(() => {
     if (isAuthenticated) {
       navigate("/allotroom");
     }
-  }, [isAuthenticated]);
+  }, [isAuthenticated, navigate]);
 
   const initializeSignIn = () => {
     instance.loginRedirect();
   };
-
-  /* if (digestHex != "ac0d0a66508c239711429e6d05d6068659d9a44beac3a6d718dc0ac33ce11a7cfb8cf7368a0b0078e7aeffcaa9df2679ee14901658839fd0ce6c22e743b46ad2") {
-    return <>Site under maintenance. Please wait for an official mail</>;
-  } */
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-5 bg-gray-200">

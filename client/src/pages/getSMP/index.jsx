@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getName, getRollNumber } from "@/lib/auth_utility";
 import { useMsal } from "@azure/msal-react";
 import { BrowserAuthError, InteractionRequiredAuthError } from "@azure/msal-browser";
-import { useNavigate } from "react-router";
+import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
 
 export default function GetSMP() {
   const { accounts, instance } = useMsal();

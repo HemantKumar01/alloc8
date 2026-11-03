@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { useNavigate } from "react-router";
+import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
 import {
   InputOTP,
   InputOTPGroup,

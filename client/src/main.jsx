@@ -2,6 +2,7 @@ import React, { Children, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router";
+import PasscodeGate from "./components/PasscodeGate.jsx";
 import Spinner from "./components/spinner.jsx";
 import {
   Home,
@@ -25,7 +26,8 @@ import GetSMP from "./pages/getSMP";
 
 const router = createBrowserRouter([
   {
-    errorElement: <Error />,
+    element: <PasscodeGate />,
+    errorElement: <PasscodeGate errorElement={<Error />} />,
     children: [
       {
         path: "/",

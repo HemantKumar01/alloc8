@@ -1,9 +1,11 @@
+import { useLocation } from "react-router";
 import Header from "@/components/Header";
 import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 
 export default function WaitingPage() {
+  const { search } = useLocation();
   return (
     <div className="flex flex-col min-h-screen bg-slate-100">
       <Header />
@@ -16,7 +18,7 @@ export default function WaitingPage() {
           <br />
           Your SMP details will be informed to you after allocation.
         </p>
-        <Link to="/" className="mt-8 max-w-md">
+        <Link to={{ pathname: "/", search: search }} className="mt-8 max-w-md">
           <Button className="w-full px-4 py-2 bg-[#538ff8] text-white text-sm font-semibold rounded-lg hover:bg-[#4378d6] transition duration-300">
             Go to Home
           </Button>

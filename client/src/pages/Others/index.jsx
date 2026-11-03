@@ -29,7 +29,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { useNavigate } from "react-router";
+import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
 import Footer from "@/components/Footer";
 import { useMsal } from "@azure/msal-react";
 import { BrowserAuthError, InteractionRequiredAuthError, InteractionStatus } from "@azure/msal-browser";
