@@ -42,27 +42,6 @@ model students {
   @@index([hostel, roomnum])
 }
 
-model formLogs {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-  eventId String
-  sessionId String?
-  rollnum String
-  batch String
-  gender String
-  form String
-  source String
-  event String
-  step String
-  sequence Int?
-  details Json
-  createdAt DateTime @default(now())
-  timestampIST String
-
-  @@unique([rollnum, eventId])
-  @@index([rollnum, createdAt])
-  @@index([sessionId, createdAt])
-}
-
 model fresherDetails {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   rollnum String @unique

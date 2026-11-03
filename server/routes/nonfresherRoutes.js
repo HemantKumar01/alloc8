@@ -50,14 +50,13 @@ router.use(async (req, res, next) => {
 });
 
 //if allocated then get this and show to client
-router.post("/form-logs", nonfresherController.logStep);
-router.get("/allocated-details", nonfresherController.auditRequest("allocation_check", "allocation"), nonfresherController.showDetails);
+router.get("/allocated-details", nonfresherController.showDetails);
 //apis needed
 // - get the detail of the hostel one is eligible for , the live real time status of the rooms vacancy
 // -  post self willingness choice of the hostel
 
-router.post("/room-status", nonfresherController.auditRequest("room_lookup", "room"), nonfresherController.getRoom);
-router.post("/room-booking", nonfresherController.auditRequest("booking", "room"), nonfresherController.roomBooking);
+router.post("/room-status", nonfresherController.getRoom);
+router.post("/room-booking", nonfresherController.roomBooking);
 
 export default router;
 /* vi: set et sw=2: */

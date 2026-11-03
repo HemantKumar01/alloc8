@@ -2,7 +2,7 @@ import { test, mock } from "node:test";
 import assert from "node:assert/strict";
 
 // Test the controller without connecting to MongoDB or Redis.
-const database = { students: {}, rooms: {}, formLogs: {} };
+const database = { students: {}, rooms: {} };
 const redis = { set: async () => "OK", del: mock.fn(async () => 1) };
 mock.module("@prisma/client", {
   namedExports: { PrismaClient: class { constructor() { return database; } } },
@@ -29,12 +29,11 @@ test("a student with no booking receives an explicit NO_ALLOCATION response", as
   assert.equal(database.rooms.findUnique.mock.callCount(), 0);
 });
 
-test("booking timestamp and authoritative success log are written in the allocation transaction", async () => {
+test("booking writes the room and timestamped student without a logging database dependency", async () => {
   const now = new Date("2026-12-31T18:30:00.123Z");
   mock.timers.enable({ apis: ["Date"], now });
   let inTransaction = false;
   let savedStudent;
-  let savedLog;
   database.students.findUnique = async () => null;
   database.rooms.findUnique = async () => ({
     roomId: "room-1", roomNum: "401", hostel: "Kalam", numFilled: 0, capacity: 2, students: [],
@@ -48,35 +47,25 @@ test("booking timestamp and authoritative success log are written in the allocat
     assert.equal(inTransaction, true);
     savedStudent = data;
   };
-  database.formLogs.create = async ({ data }) => {
-    assert.equal(inTransaction, true);
-    savedLog = data;
-  };
   const res = response();
   try {
     await controller.roomBooking({ body: { roomId: "room-1", bookingTimestampIST: "forged" }, get: () => undefined }, res);
     assert.equal(res.statusCode, 200);
     assert.equal(savedStudent.bookingTimestampIST, "2027-01-01 00:00:00.123 IST");
-    assert.equal(savedLog.timestampIST, savedStudent.bookingTimestampIST);
-    assert.equal(savedLog.event, "booking_succeeded");
-    assert.equal(savedLog.source, "server");
-    assert.deepEqual(savedLog.details, { roomId: "room-1" });
     assert.equal(redis.del.mock.callCount(), 2);
   } finally {
     mock.timers.reset();
   }
 });
 
-test("a rejected full-room booking does not create a timestamp or success log", async () => {
+test("a rejected full-room booking does not create a student", async () => {
   database.rooms.findUnique = async () => ({ numFilled: 2, capacity: 2 });
   database.students.findUnique = async () => null;
   database.students.create = mock.fn();
-  database.formLogs.create = mock.fn();
   const res = response();
   await controller.roomBooking({ body: { roomId: "full-room" } }, res);
   assert.equal(res.statusCode, 400);
   assert.equal(database.students.create.mock.callCount(), 0);
-  assert.equal(database.formLogs.create.mock.callCount(), 0);
 });
 
 test("an unallocated student does not trigger a room lookup", async () => {

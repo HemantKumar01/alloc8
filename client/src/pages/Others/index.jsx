@@ -16,7 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import hostel_data from "@/../../data-gen/available_rooms.json";
 import studentConfig from "@/../../data-gen/roll_numbers.json";
 import { buildHostelOptions } from "../../../../shared/roomSelection.mjs";
@@ -33,7 +33,6 @@ import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
 import Footer from "@/components/Footer";
 import { useMsal } from "@azure/msal-react";
 import { BrowserAuthError, InteractionRequiredAuthError, InteractionStatus } from "@azure/msal-browser";
-import { createFormLogger } from "@/lib/formLogger";
 
 const steps = [
   { title: "Hostel" },
@@ -93,7 +92,7 @@ const StepperForm = ({
   );
 };
 
-const Hostel = ({ data, onNext, onPrev, activeStep, logStep }) => {
+const Hostel = ({ data, onNext, onPrev, activeStep }) => {
   const available_hostels = Object.keys(data);
 
   const handleSubmit = (e) => {
@@ -102,7 +101,6 @@ const Hostel = ({ data, onNext, onPrev, activeStep, logStep }) => {
     const data = new FormData(form);
     const hostel = data.get("hostel");
     if (!hostel) {
-      logStep("validation_failed", "hostel");
       alert("Please select a hostel");
       return;
     }
@@ -121,7 +119,6 @@ const Hostel = ({ data, onNext, onPrev, activeStep, logStep }) => {
       <RadioGroup
         id="hostel"
         name="hostel"
-        onValueChange={(hostel) => logStep("hostel_selected", "hostel", { hostel })}
         className="flex w-full flex-wrap sm:flex-nowrap "
       >
         {available_hostels.map((hostel) => {
@@ -205,8 +202,6 @@ const FloorAndRoom = ({
   data,
   hostel,
   idToken,
-  sessionId,
-  logStep,
 }) => {
   const floors = data.floors;
   const [floor, setFloor] = useState("");
@@ -236,7 +231,6 @@ const FloorAndRoom = ({
         Accept: "application/json",
         "Content-Type": "application/json",
         "X-Alloc8-IDToken": idToken,
-        "X-Alloc8-FormSession": sessionId,
       },
       body: JSON.stringify(postBody),
     })
@@ -251,22 +245,19 @@ const FloorAndRoom = ({
         setRoomData(data.rooms);
       })
       .catch(() => {
-        logStep("request_failed", "room", postBody);
         alert("Could not load rooms. Please reload the page to try again.");
       })
       .finally(() => setLoading(false));
-  }, [floor, hostel, idToken, data.hostel, data.block, sessionId, logStep]);
+  }, [floor, hostel, idToken, data.hostel, data.block]);
   const [roommateCode, setRoommateCode] = useState("");
   const bookRoom = (roomId) => {
     if (!idToken) return;
-    logStep("booking_submitted", "room", { roomId });
     fetch(`${import.meta.env.VITE_SERVER_URL}/api/nonfresher/room-booking`, {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
         "X-Alloc8-IDToken": idToken,
-        "X-Alloc8-FormSession": sessionId,
       },
       body: JSON.stringify({
         roomId: roomId,
@@ -280,7 +271,6 @@ const FloorAndRoom = ({
         alert(data.error);
       }
     }).catch(() => {
-      logStep("request_failed", "room", { roomId });
       alert("Could not confirm your booking. Please reload to check your allocation before trying again.");
     });
   };
@@ -323,7 +313,6 @@ const FloorAndRoom = ({
           id="floor"
           name="floor"
           onValueChange={(value) => {
-            logStep("floor_selected", "room", { hostel: data.hostel, block: data.block, floor: value });
             setRoomData([]);
             setFloor(value);
           }}
@@ -363,7 +352,6 @@ const FloorAndRoom = ({
                 <DialogTrigger asChild>
                   <Button
                     onClick={() => {
-                      logStep("room_selected", "room", { roomId: room.roomId, hostel: data.hostel, block: data.block, floor });
                       updateRooms();
                       // if (room.capacity <= room.numFilled) {
                       //   alert("Room became full according to updated data");
@@ -464,8 +452,6 @@ const OthersRoomAllocPage = () => {
   const [checkingAllocation, setCheckingAllocation] = useState(true);
   const [allocationError, setAllocationError] = useState("");
   const [allocationCheckAttempt, setAllocationCheckAttempt] = useState(0);
-  const [sessionId] = useState(() => crypto.randomUUID());
-  const logStep = useMemo(() => createFormLogger(idToken, sessionId), [idToken, sessionId]);
 
   useEffect(() => {
     if (inProgress !== InteractionStatus.None) return;
@@ -483,7 +469,7 @@ const OthersRoomAllocPage = () => {
 
         const response = await fetch(
           `${import.meta.env.VITE_SERVER_URL}/api/nonfresher/allocated-details`,
-          { headers: { "X-Alloc8-IDToken": tokenResponse.idToken, "X-Alloc8-FormSession": sessionId }, signal: controller.signal },
+          { headers: { "X-Alloc8-IDToken": tokenResponse.idToken }, signal: controller.signal },
         );
         if (!response.ok && response.status !== 404) {
           throw new Error("Could not check your room allocation. Please try again.");
@@ -519,14 +505,9 @@ const OthersRoomAllocPage = () => {
     };
     checkAllocation();
     return () => controller.abort();
-  }, [instance, inProgress, navigate, allocationCheckAttempt, sessionId]);
+  }, [instance, inProgress, navigate, allocationCheckAttempt]);
   let [activeStep, setActiveStep] = useState(0);
   const [hostel, setHostel] = useState("");
-  useEffect(() => {
-    if (idToken && !checkingAllocation && !allocationError) {
-      logStep("step_viewed", activeStep === 0 ? "hostel" : "room");
-    }
-  }, [idToken, checkingAllocation, allocationError, activeStep, logStep]);
   // const [floor, setFloor] = useState(0);
 
   const getComponent = () => {
@@ -534,15 +515,12 @@ const OthersRoomAllocPage = () => {
       case 0:
         return (
           <Hostel
-            logStep={logStep}
             data={availableRooms}
             activeStep={0}
             onPrev={() => {
               setActiveStep((a) => a - 1);
             }}
             onNext={(data) => {
-              const selection = availableRooms[data];
-              logStep("hostel_completed", "hostel", { hostel: selection.hostel, block: selection.block });
               setHostel(data);
               setActiveStep((a) => a + 1);
             }}
@@ -551,14 +529,11 @@ const OthersRoomAllocPage = () => {
       case 1:
         return (
           <FloorAndRoom
-            logStep={logStep}
-            sessionId={sessionId}
             activeStep={1}
             data={availableRooms[hostel]}
             hostel={hostel}
             idToken={idToken}
             onPrev={() => {
-              logStep("previous_clicked", "room");
               setActiveStep((a) => a - 1);
             }}
           />

@@ -5,7 +5,7 @@ const redis = new Redis();
 import crypto from "crypto";
 import availableRooms from "../../data-gen/available_rooms.json" with { type: "json" };
 import { buildRoomFilter } from "../../shared/roomSelection.mjs";
-import { createRequestAudit, createStepLogger, formLogData, formatTimestampIST } from "../lib/formLogging.js";
+import { formatTimestampIST } from "../lib/bookingTimestamp.js";
 
 const codeExpiryDelta = 10 * 60000;
 
@@ -254,9 +254,6 @@ async function roomBooking(req, res) {
             bookingTimestampIST: formatTimestampIST(bookedAt),
           },
         });
-        await prisma.formLogs.create({
-          data: formLogData(req, res, "booking_succeeded", "room", { roomId }, bookedAt),
-        });
       });
 
       return res.status(200).json({ message: "Room booked successfully" });
@@ -273,8 +270,6 @@ async function roomBooking(req, res) {
 }
 
 export default {
-  logStep: createStepLogger(prisma),
-  auditRequest: (event, step) => createRequestAudit(prisma, event, step),
   showDetails,
   getRoom,
   roomBooking,
