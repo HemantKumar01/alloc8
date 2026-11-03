@@ -59,3 +59,32 @@ test("a missing booked room is a server error, not permission to book another ro
   assert.equal(res.statusCode, 500);
   assert.notEqual(res.body.code, "NO_ALLOCATION");
 });
+
+for (const occupancy of [1, 2]) {
+  test(`roommates for occupancy ${occupancy} include only students with the same full room ID`, async () => {
+    const student = {
+      rollnum: "2301cs99", name: "Current student", allocated: true,
+      room: "KalamB-401-btech23", hostel: "Kalam", roomnum: "401", occupancy,
+    };
+    const sameRoom = { ...student, rollnum: "2301cs98", name: "Same room" };
+    const otherBlock = {
+      ...student, rollnum: "2301cs97", name: "Other block", room: "KalamC-401-btech23",
+    };
+    const otherBatch = {
+      ...student, rollnum: "2401cs99", name: "Other batch", room: "KalamB-401-btech24",
+    };
+    const occupants = occupancy === 1 ? [student] : [student, sameRoom];
+    const allStudents = [...occupants, otherBlock, otherBatch];
+    database.students.findUnique = async () => student;
+    database.students.findMany = async ({ where, select }) => allStudents
+      .filter(record => Object.entries(where).every(([key, value]) => record[key] === value))
+      .map(record => Object.fromEntries(Object.keys(select).map(key => [key, record[key]])));
+    database.rooms.findUnique = async () => ({ roomId: student.room, roommateCode: null });
+
+    const res = response();
+    await controller.showDetails({}, res);
+
+    assert.equal(res.statusCode, 200);
+    assert.deepEqual(res.body.roommates, occupants.map(({ rollnum, name }) => ({ rollnum, name })));
+  });
+}

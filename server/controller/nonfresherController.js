@@ -60,8 +60,7 @@ async function showDetails(req, res) {
     if (student && student.allocated) {
       const roommates = await prisma.students.findMany({
         where: {
-          hostel: student.hostel,
-          roomnum: student.roomnum,
+          room: student.room,
         },
         select: {
           rollnum: true,
