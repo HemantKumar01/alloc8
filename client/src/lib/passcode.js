@@ -1,6 +1,6 @@
 export function hasValidPasscode(search) {
   const values = new URLSearchParams(search).getAll("pass");
-  return values.length === 1 && values[0] === "DkMkC";
+  return values.length === 1 && values[0] === "pkmkb";
 }
 
 export function preservePasscode(to, search) {
