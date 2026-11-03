@@ -19,11 +19,6 @@
     "gender": "male",
     "rollNumber": "2301AI05"
   },
-  "daksh_2301ai07@iitp.ac.in": {
-    "batch": "btech23",
-    "gender": "male",
-    "rollNumber": "2301AI07"
-  },
   "navaneeth_2301ai14@iitp.ac.in": {
     "batch": "btech23",
     "gender": "male",
@@ -284,11 +279,6 @@
     "gender": "male",
     "rollNumber": "2301CB44"
   },
-  "shivank_2301cb46@iitp.ac.in": {
-    "batch": "btech23",
-    "gender": "male",
-    "rollNumber": "2301CB46"
-  },
   "atharv_2301cb47@iitp.ac.in": {
     "batch": "btech23",
     "gender": "male",
@@ -343,11 +333,6 @@
     "batch": "btech23",
     "gender": "male",
     "rollNumber": "2301CB59"
-  },
-  "prateek_2301cb62@iitp.ac.in": {
-    "batch": "btech23",
-    "gender": "male",
-    "rollNumber": "2301CB62"
   },
   "tejas_2301cb64@iitp.ac.in": {
     "batch": "btech23",
@@ -743,11 +728,6 @@
     "batch": "btech23",
     "gender": "male",
     "rollNumber": "2301CS56"
-  },
-  "suman_2301cs57@iitp.ac.in": {
-    "batch": "btech23",
-    "gender": "male",
-    "rollNumber": "2301CS57"
   },
   "swapnil_2301cs58@iitp.ac.in": {
     "batch": "btech23",
@@ -1175,11 +1155,6 @@
     "batch": "btech23",
     "gender": "male",
     "rollNumber": "2301EE15"
-  },
-  "prasad_2301ee20@iitp.ac.in": {
-    "batch": "btech23",
-    "gender": "male",
-    "rollNumber": "2301EE20"
   },
   "rohit_2301ee22@iitp.ac.in": {
     "batch": "btech23",
@@ -2086,11 +2061,6 @@
     "gender": "male",
     "rollNumber": "2302MC01"
   },
-  "chirag_2302mc03@iitp.ac.in": {
-    "batch": "btech23",
-    "gender": "male",
-    "rollNumber": "2302MC03"
-  },
   "laksh_2302mc05@iitp.ac.in": {
     "batch": "btech23",
     "gender": "male",
@@ -2101,20 +2071,10 @@
     "gender": "male",
     "rollNumber": "2302MC06"
   },
-  "rishit_2302mc07@iitp.ac.in": {
-    "batch": "btech23",
-    "gender": "male",
-    "rollNumber": "2302MC07"
-  },
   "sunny_2302mc09@iitp.ac.in": {
     "batch": "btech23",
     "gender": "male",
     "rollNumber": "2302MC09"
-  },
-  "veda_2302mc10@iitp.ac.in": {
-    "batch": "btech23",
-    "gender": "male",
-    "rollNumber": "2302MC10"
   },
   "shubham_2302mc11@iitp.ac.in": {
     "batch": "btech23",
@@ -2285,5 +2245,50 @@
     "batch": "btech23",
     "gender": "male",
     "rollNumber": "2303ME14"
+  },
+  "tanish_2301ph22@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2301PH22"
+  },
+  "ashmit_2301ph07@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2301PH07"
+  },
+  "sai_2301ee33@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2301EE33"
+  },
+  "raj_2301me42@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2301ME42"
+  },
+  "saatvik_2302gt02@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2302GT02"
+  },
+  "yagyesh_2302mc12@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2302MC12"
+  },
+  "rishabh_2302st04@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2302ST04"
+  },
+  "parul_2301cs35@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2301CS35"
+  },
+  "abhishek_2301cb02@iitp.ac.in": {
+    "batch": "btech23",
+    "gender": "male",
+    "rollNumber": "2301CB02"
   }
 }
