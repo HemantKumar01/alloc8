@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router";
-import PasscodeGate from "./components/PasscodeGate.jsx";
 import Spinner from "./components/spinner.jsx";
 import AllocationRedirect from "./components/AllocationRedirect.jsx";
 
@@ -16,8 +15,7 @@ import { msalConfig } from "./authConfig.js";
 
 const router = createBrowserRouter([
   {
-    element: <PasscodeGate />,
-    errorElement: <PasscodeGate errorElement={<Error />} />,
+    errorElement: <Error />,
     children: [
       { path: "/", element: <Home />, errorElement: <Error /> },
       { path: "/success", element: <Success />, errorElement: <Error /> },

@@ -1,7 +1,5 @@
-import { Navigate, useLocation } from "react-router";
-import { preservePasscode } from "@/lib/passcode";
+import { Navigate } from "react-router";
 
 export default function AllocationRedirect() {
-  const { search } = useLocation();
-  return <Navigate to={preservePasscode("/success", search)} replace />;
+  return <Navigate to="/success" replace />;
 }

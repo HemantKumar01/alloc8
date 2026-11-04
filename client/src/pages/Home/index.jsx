@@ -3,7 +3,7 @@ import msLogo from "../../assets/ms_logo.svg";
 import logo from "../../assets/logo.png";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
-import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
+import { useNavigate } from "react-router";
 import { useIsAuthenticated, useMsal } from "@azure/msal-react";
 
 const HomePage = () => {

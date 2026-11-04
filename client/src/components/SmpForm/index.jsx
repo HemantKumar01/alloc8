@@ -1,5 +1,5 @@
 import { useForm, Controller } from "react-hook-form";
-import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
+import { useNavigate } from "react-router";
 import data from "@/data/formoptions.json";
 import Options from "../FormOptions";
 import Select from "react-select";
