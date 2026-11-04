@@ -1,64 +1,35 @@
 import { getName, getRollNumber } from "@/lib/auth_utility";
 import Spinner from "@/components/spinner";
 import Header from "@/components/Header";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { usePasscodeNavigate as useNavigate } from "@/lib/usePasscodeNavigate";
 import Footer from "@/components/Footer";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
-import { BrowserAuthError, InteractionRequiredAuthError } from "@azure/msal-browser";
-import { useMsal, AuthenticatedTemplate } from "@azure/msal-react";
+import { InteractionStatus } from "@azure/msal-browser";
+import { useMsal } from "@azure/msal-react";
+
+import studentsCsv from "../../../../alloc8.students.csv?raw";
+import { createStudentLookup } from "@/lib/studentAllocations.mjs";
+
+const findStudent = createStudentLookup(studentsCsv);
 
 const SuccessPage = () => {
-  const { instance } = useMsal();
-  const [idToken, setIdToken] = useState();
-  const [idTokenClaims, setIdTokenClaims] = useState();
-  const [loading, setLoading] = useState(true);
-  const [studData, setStudData] = useState({});
+  const { instance, accounts, inProgress } = useMsal();
+  const account = instance.getActiveAccount() ?? accounts[0];
+  const idTokenClaims = {
+    ...account?.idTokenClaims,
+    email: account?.idTokenClaims?.email || account?.username,
+  };
+  const rollNumber = getRollNumber(idTokenClaims);
+  const studData = findStudent(rollNumber);
+  const loading = inProgress !== InteractionStatus.None;
   const navigate = useNavigate();
   const contentRef = useRef();
-  const request = { scopes: [] };
 
   useEffect(() => {
-    instance.acquireTokenSilent(request).then(tokenResponse => {
-      setIdToken(tokenResponse.idToken);
-      setIdTokenClaims(tokenResponse.idTokenClaims);
-    }).catch(async (error) => {
-      if (error instanceof InteractionRequiredAuthError) {
-        // fallback to interaction when silent call fails
-        return instance.acquireTokenRedirect(request);
-      } else if (error instanceof BrowserAuthError) {
-        navigate("/");
-        return;
-      }
-
-      // handle other errors
-      console.log(error);
-    });
-  }, [instance]);
-
-  useEffect(() => {
-    if (!idToken) return;
-    fetch(
-      `${import.meta.env.VITE_SERVER_URL}/api/nonfresher/allocated-details`,
-      {
-        headers: { "X-Alloc8-IDToken": idToken },
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-        if (data.disabled) {
-          alert("You cannot book room yet. Please wait for an official mail.");
-          navigate("/");
-        } else if (data.error) {
-          navigate("/allotroom");
-          return;
-        }
-        setLoading(false);
-        setStudData(data);
-      })
-  }, [idToken]);
+    if (!loading && !account) navigate("/", { replace: true });
+  }, [loading, account, navigate]);
 
   const viewport = document.querySelector("meta[name=viewport]");
   const downloadPDF = () => {
@@ -78,9 +49,24 @@ const SuccessPage = () => {
     });
   };
 
+  if (loading || !account) return <Spinner loading={true} />;
+
+  if (!studData?.room) {
+    return (
+      <div className="min-h-screen bg-[#f1f5f9]">
+        <Header name={studData?.name || getName(idTokenClaims)} />
+        <main role="status" className="p-10 max-w-[700px] m-auto bg-white mt-10 shadow-md rounded-lg">
+          <h1 className="text-xl font-semibold mb-3">Room allocation unavailable</h1>
+          <p>No room allocation was found for {rollNumber || "this account"}. Please contact the hostel office for assistance.</p>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <div className="bg-[#f1f5f9] h-full w-full">
-      <Header name={getName(idTokenClaims)}></Header>
+      <Header name={studData.name || getName(idTokenClaims)}></Header>
       <Spinner loading={loading}></Spinner>
 
       <div
@@ -126,10 +112,10 @@ const SuccessPage = () => {
             room are as follows -
             <div className="p-5 text-xl font-mono border-2 my-5 capitalize">
               <div>
-                <b>Name: </b> <AuthenticatedTemplate>{getName(idTokenClaims)}</AuthenticatedTemplate>
+                <b>Name: </b> {studData.name}
               </div>
               <div>
-                <b>Roll No.: </b> <AuthenticatedTemplate>{getRollNumber(idTokenClaims).toUpperCase()}</AuthenticatedTemplate>
+                <b>Roll No.: </b> {studData.rollnum.toUpperCase()}
               </div>
               <div>
                 <b>Hostel: </b> {studData?.room?.split("-")[0] || studData?.hostel}
@@ -145,7 +131,7 @@ const SuccessPage = () => {
                 {new Date().toString()}
               </div>
               <div>
-                <b>Roommates Until Now: </b>{" "}
+                <b>Roommates: </b>{" "}
                 {studData?.roommates?.map((roommate) => {
                   return (
                     <div key={roommate.rollnum} className="px-10">
@@ -154,15 +140,7 @@ const SuccessPage = () => {
                   );
                 })}
               </div>
-              {studData &&
-              studData.roommateCode &&
-              studData.roommateCode.length > 0 ? (
-                <div style={{ textTransform: "lowercase" }}>
-                  <b>Roommate Code: </b> {studData?.roommateCode?.toLowerCase()}
-                </div>
-              ) : (
-                <></>
-              )}
+
             </div>
           </div>
 

@@ -1,0 +1,521 @@
+_id,rollnum,name,allocated,room,hostel,roomnum,occupancy,gender,batch,bookingTimestampIST
+6aea2ad66e44b330ff446db3,2301EC12,Jatin Kumar,true,KalamC-121-btech23,Kalam,121,1,male,btech23,2026-11-04 00:16:00.000 IST
+6aea2ad66e44b330ff446e15,2301EC26,Shaswat Suman,true,KalamD-035-btech23,Kalam,035,1,male,btech23,2026-11-04 00:16:00.250 IST
+6aea2ad66e44b330ff446e0a,2301CB44,Tushar Srivastav,true,KalamC-709-btech23,Kalam,709,1,male,btech23,2026-11-04 00:16:00.500 IST
+6aea2ad66e44b330ff446df1,2301CB56,Vishwajeet,true,KalamC-518-btech23,Kalam,518,1,male,btech23,2026-11-04 00:16:00.750 IST
+6aea2ad66e44b330ff446e4f,2301CB03,Aditya Aggarwal,true,KalamD-112-btech23,Kalam,112,1,male,btech23,2026-11-04 00:16:01.000 IST
+6aea2ad66e44b330ff446dba,2301EC24,Santosh Yadav,true,KalamC-213-btech23,Kalam,213,1,male,btech23,2026-11-04 00:16:01.250 IST
+6aea2ad66e44b330ff446e27,2301CE23,Ranjan Kumar,true,KalamD-329-btech23,Kalam,329,1,male,btech23,2026-11-04 00:16:01.500 IST
+6aea2ad66e44b330ff446dfe,2301MM09,Masthan,true,KalamC-616-btech23,Kalam,616,1,male,btech23,2026-11-04 00:16:01.750 IST
+6aea2ad66e44b330ff446dad,2301CE48,Ayush Soni,true,KalamC-108-btech23,Kalam,108,1,male,btech23,2026-11-04 00:16:02.000 IST
+6aea2ad66e44b330ff446dd7,2301CS20,Hemant Kumar,true,KalamC-411-btech23,Kalam,411,1,male,btech23,2026-11-04 00:16:02.250 IST
+6aea2ad66e44b330ff446dc1,2301EE24,Sameeratmaj Pandey,true,KalamC-305-btech23,Kalam,305,1,male,btech23,2026-11-04 00:16:02.500 IST
+6aea2ad66e44b330ff446e3d,2302MC01,Anirudh Reddy,true,KalamD-601-btech23,Kalam,601,1,male,btech23,2026-11-04 00:16:02.750 IST
+6aea2ad66e44b330ff446e04,2301PH12,Nishanth,true,KalamC-703-btech23,Kalam,703,1,male,btech23,2026-11-04 00:16:03.000 IST
+6aea2ad66e44b330ff446e2e,2301CT08,Bismay Bibhor Behera,true,KalamD-406-btech23,Kalam,406,1,male,btech23,2026-11-04 00:16:03.250 IST
+6aea2ad66e44b330ff446e2a,2301CB40,Rupak,true,KalamD-336-btech23,Kalam,336,1,male,btech23,2026-11-04 00:16:03.500 IST
+6aea2ad66e44b330ff446e48,2301ME29,Lohitaksha Guha,true,KalamD-627-btech23,Kalam,627,1,male,btech23,2026-11-04 00:16:03.750 IST
+6aea2ad66e44b330ff446df4,2302CS10,Nakshatra Kanchan,true,KalamC-521-btech23,Kalam,521,1,male,btech23,2026-11-04 00:16:04.000 IST
+6aea2ad66e44b330ff446dd1,2301AI45,Ayush Kumar Singh,true,KalamC-404-btech23,Kalam,404,1,male,btech23,2026-11-04 00:16:04.250 IST
+6aea2ad66e44b330ff446dae,2301CS50,Shashwat Kumar Singh,true,KalamC-111-btech23,Kalam,111,1,male,btech23,2026-11-04 00:16:04.500 IST
+6aea2ad66e44b330ff446de7,2302MC06,Maganjot Singh,true,KalamC-507-btech23,Kalam,507,1,male,btech23,2026-11-04 00:16:04.750 IST
+6aea2ad66e44b330ff446dbc,2301CE46,Ashish Yadav,true,KalamC-219-btech23,Kalam,219,1,male,btech23,2026-11-04 00:16:05.000 IST
+6aea2ad66e44b330ff446e06,2301AI55,Abhay,true,KalamC-705-btech23,Kalam,705,1,male,btech23,2026-11-04 00:16:05.250 IST
+6aea2ad66e44b330ff446e4e,2301ME65,Masa Sudharshan,true,KalamD-732-btech23,Kalam,732,1,male,btech23,2026-11-04 00:16:05.500 IST
+6aea2ad66e44b330ff446de1,2301AI44,Shubham Agrawal,true,KalamC-421-btech23,Kalam,421,1,male,btech23,2026-11-04 00:16:05.750 IST
+6aea2ad66e44b330ff446e20,2302CS11,Aditya Prakash,true,KalamD-306-btech23,Kalam,306,1,male,btech23,2026-11-04 00:16:06.000 IST
+6aea2ad66e44b330ff446df9,2301CE17,Mandeep Singh,true,KalamC-607-btech23,Kalam,607,1,male,btech23,2026-11-04 00:16:06.250 IST
+6aea2ad66e44b330ff446daf,2301MM32,Diptanshu Saurav,true,KalamC-112-btech23,Kalam,112,1,male,btech23,2026-11-04 00:16:06.500 IST
+6aea2ad66e44b330ff446e1e,2301EE44,Abhinav,true,KalamD-304-btech23,Kalam,304,1,male,btech23,2026-11-04 00:16:06.750 IST
+6aea2ad66e44b330ff446dc5,2302MC11,Shubham Prakash,true,KalamC-310-btech23,Kalam,310,1,male,btech23,2026-11-04 00:16:07.000 IST
+6aea2ad66e44b330ff446e41,2301CB22,Aryan,true,KalamD-606-btech23,Kalam,606,1,male,btech23,2026-11-04 00:16:07.250 IST
+6aea2ad66e44b330ff446e39,2301MC10,Karan,true,KalamD-524-btech23,Kalam,524,1,male,btech23,2026-11-04 00:16:07.500 IST
+6aea2ad66e44b330ff446e3b,2301CT06,Atharva Pawar,true,KalamD-531-btech23,Kalam,531,1,male,btech23,2026-11-04 00:16:07.750 IST
+6aea2ad66e44b330ff446dcf,2301AI22,Shresth Kasyap,true,KalamC-402-btech23,Kalam,402,1,male,btech23,2026-11-04 00:16:08.000 IST
+6aea2ad66e44b330ff446db5,2301MM38,Remanshu Sharma,true,KalamC-205-btech23,Kalam,205,1,male,btech23,2026-11-04 00:16:08.250 IST
+6aea2ad66e44b330ff446dc3,2302GT06,Amaan Ali,true,KalamC-308-btech23,Kalam,308,1,male,btech23,2026-11-04 00:16:08.500 IST
+6aea2ad66e44b330ff446e1b,2302PC02,Amal,true,KalamD-301-btech23,Kalam,301,1,male,btech23,2026-11-04 00:16:08.750 IST
+6aea2c115d329e5cdb007a1f,2302MC05,Laksh Kumar Sisodiya,true,KalamD-227-btech23,Kalam,227,1,male,btech23,2026-11-04 00:16:09.000 IST
+6aea2ad66e44b330ff446dd4,2301AI01,Aditya Sharma,true,KalamC-407-btech23,Kalam,407,1,male,btech23,2026-11-04 00:16:09.250 IST
+6aea2ad66e44b330ff446e17,2301CB46,Shivank Goyal,true,KalamD-113-btech23,Kalam,113,1,male,btech23,2026-11-04 00:16:09.500 IST
+6aea2ad66e44b330ff446de9,2301CT11,Garvit Sahni,true,KalamC-509-btech23,Kalam,509,1,male,btech23,2026-11-04 00:16:09.750 IST
+6aea2ad66e44b330ff446db0,2301CS83,Rishikumar Gautam,true,KalamC-113-btech23,Kalam,113,1,male,btech23,2026-11-04 00:16:10.000 IST
+6aea2ad66e44b330ff446dbe,2301MC17,Prakhar Palod,true,KalamC-301-btech23,Kalam,301,1,male,btech23,2026-11-04 00:16:10.250 IST
+6aea2ad66e44b330ff446e4d,2301MM33,Ramavath Jagadeesh,true,KalamD-731-btech23,Kalam,731,1,male,btech23,2026-11-04 00:16:10.500 IST
+6aea2ad66e44b330ff446dd5,2302CS06,Pranjal Kole,true,KalamC-409-btech23,Kalam,409,1,male,btech23,2026-11-04 00:16:10.750 IST
+6aea2ad66e44b330ff446e03,2301CS11,Bharath Nayak,true,KalamC-702-btech23,Kalam,702,1,male,btech23,2026-11-04 00:16:11.000 IST
+6aea2ad66e44b330ff446e0c,2301EE04,Aditya Gangboir,true,KalamC-713-btech23,Kalam,713,1,male,btech23,2026-11-04 00:16:11.250 IST
+6aea2ad66e44b330ff446e25,2301MC52,Aryan Vats,true,KalamD-321-btech23,Kalam,321,1,male,btech23,2026-11-04 00:16:11.500 IST
+6aea2ad66e44b330ff446e30,2301CE25,Saurav Kumar,true,KalamD-414-btech23,Kalam,414,1,male,btech23,2026-11-04 00:16:11.750 IST
+6aea2ad66e44b330ff446e51,2301CB31,Nikhil Pandey,true,KalamD-115-btech23,Kalam,115,1,male,btech23,2026-11-04 00:16:12.000 IST
+6aea2ad66e44b330ff446dfa,2301EC59,Lalit Sen,true,KalamC-611-btech23,Kalam,611,1,male,btech23,2026-11-04 00:16:12.250 IST
+6aea2ad66e44b330ff446dc4,2301EE43,Yuvan Vanapalli,true,KalamC-309-btech23,Kalam,309,1,male,btech23,2026-11-04 00:16:12.500 IST
+6aea2ad66e44b330ff446e50,2301CB30,Nishant Sharma,true,KalamD-114-btech23,Kalam,114,1,male,btech23,2026-11-04 00:16:12.750 IST
+6aea2ad66e44b330ff446e4c,2301EE39,Neelesh,true,KalamD-727-btech23,Kalam,727,1,male,btech23,2026-11-04 00:16:13.000 IST
+6aea2ad66e44b330ff446e28,2301EC52,Utsav Das,true,KalamD-333-btech23,Kalam,333,1,male,btech23,2026-11-04 00:16:13.250 IST
+6aea2ad66e44b330ff446de6,2302ST08,Taksh Bhawan,true,KalamC-506-btech23,Kalam,506,1,male,btech23,2026-11-04 00:16:13.500 IST
+6aea2ad66e44b330ff446df8,2301CE21,Pulkit Rander,true,KalamC-606-btech23,Kalam,606,1,male,btech23,2026-11-04 00:16:13.750 IST
+6aea2ad66e44b330ff446de2,2301CS35,Parul Garg,true,KalamC-501-btech23,Kalam,501,1,male,btech23,2026-11-04 00:16:14.000 IST
+6aea2ad66e44b330ff446e09,2302ST04,Rishabh Singraur,true,KalamC-708-btech23,Kalam,708,1,male,btech23,2026-11-04 00:16:14.250 IST
+6aea2ad66e44b330ff446e0b,2301MC33,Vansh,true,KalamC-712-btech23,Kalam,712,1,male,btech23,2026-11-04 00:16:14.500 IST
+6aea2ad66e44b330ff446e1a,2301ME21,Himanshu Kumar,true,KalamD-211-btech23,Kalam,211,1,male,btech23,2026-11-04 00:16:14.750 IST
+6aea2ad66e44b330ff446e49,2301ME28,Lochan Bhaskaruni,true,KalamD-628-btech23,Kalam,628,1,male,btech23,2026-11-04 00:16:15.000 IST
+6aea2ad66e44b330ff446e4a,2301CS66,Prateek Gupta,true,KalamD-632-btech23,Kalam,632,1,male,btech23,2026-11-04 00:16:15.250 IST
+6aea2ad66e44b330ff446ded,2301CE12,Ghanishth Attrey,true,KalamC-513-btech23,Kalam,513,1,male,btech23,2026-11-04 00:16:15.500 IST
+6aea2ad66e44b330ff446dfc,2301MC47,Mohit Kumar,true,KalamC-613-btech23,Kalam,613,1,male,btech23,2026-11-04 00:16:15.750 IST
+6aea2ad66e44b330ff446df2,2301EE48,Vansh,true,KalamC-519-btech23,Kalam,519,1,male,btech23,2026-11-04 00:16:16.000 IST
+6aea2ad66e44b330ff446e10,2301CB08,Aryan Sambre,true,KalamC-718-btech23,Kalam,718,1,male,btech23,2026-11-04 00:16:16.250 IST
+6aea2ad66e44b330ff446e2f,2301CT21,Aryan Singh,true,KalamD-407-btech23,Kalam,407,1,male,btech23,2026-11-04 00:16:16.500 IST
+6aea2ad66e44b330ff446e16,2301ME04,Aditya Satpute,true,KalamD-036-btech23,Kalam,036,1,male,btech23,2026-11-04 00:16:16.750 IST
+6aea2ad66e44b330ff446e40,2301EC14,GUNDAMALLA MARTIN DAYA SAGAR,true,KalamD-604-btech23,Kalam,604,1,male,btech23,2026-11-04 00:16:17.000 IST
+6aea2ad66e44b330ff446dd9,2301MM04,Ananta,true,KalamC-413-btech23,Kalam,413,1,male,btech23,2026-11-04 00:16:17.250 IST
+6aea2ad66e44b330ff446dca,2301MC18,Prashant Nigam,true,KalamC-316-btech23,Kalam,316,1,male,btech23,2026-11-04 00:16:17.500 IST
+6aea2ad66e44b330ff446e02,2302CS07,Srikant Sahoo,true,KalamC-701-btech23,Kalam,701,1,male,btech23,2026-11-04 00:16:17.750 IST
+6aea2ad66e44b330ff446dbf,2302GT02,Saatvik Pandey,true,KalamC-302-btech23,Kalam,302,1,male,btech23,2026-11-04 00:16:18.000 IST
+6aea2ad66e44b330ff446dd2,2301AI46,Kumar Anurag,true,KalamC-405-btech23,Kalam,405,1,male,btech23,2026-11-04 00:16:18.250 IST
+6aea2ad66e44b330ff446db7,2301MM22,Dhivyesh,true,KalamC-208-btech23,Kalam,208,1,male,btech23,2026-11-04 00:16:18.500 IST
+6aea2ad66e44b330ff446e22,2301EC55,Raqeeb Ansari,true,KalamD-311-btech23,Kalam,311,1,male,btech23,2026-11-04 00:16:18.750 IST
+6aea2ad66e44b330ff446e33,2301CS41,Sahil Raj,true,KalamD-429-btech23,Kalam,429,1,male,btech23,2026-11-04 00:16:19.000 IST
+6aea2ad66e44b330ff446dfb,2301ME49,Tanish Chordiya,true,KalamC-612-btech23,Kalam,612,1,male,btech23,2026-11-04 00:16:19.250 IST
+6aea2ad66e44b330ff446df6,2301CE24,Saurabh Sankla,true,KalamC-602-btech23,Kalam,602,1,male,btech23,2026-11-04 00:16:19.500 IST
+6aea2ad66e44b330ff446e12,2301EE46,Manu,true,KalamC-721-btech23,Kalam,721,1,male,btech23,2026-11-04 00:16:19.750 IST
+6aea2ad66e44b330ff446e01,2301MM36,Rakesh Kumar,true,KalamC-621-btech23,Kalam,621,1,male,btech23,2026-11-04 00:16:20.000 IST
+6aea2ad66e44b330ff446df0,2301PH22,Tanish Dhankhar,true,KalamC-517-btech23,Kalam,517,1,male,btech23,2026-11-04 00:16:20.250 IST
+6aea2ad66e44b330ff446e42,2301EC29,Smit Bhatt,true,KalamD-611-btech23,Kalam,611,1,male,btech23,2026-11-04 00:16:20.500 IST
+6aea2ad66e44b330ff446e44,2301CS38,Rakshit Singhal,true,KalamD-614-btech23,Kalam,614,1,male,btech23,2026-11-04 00:16:20.750 IST
+6aea2ad66e44b330ff446dcb,2301AI28,Swagatam Pati,true,KalamC-318-btech23,Kalam,318,1,male,btech23,2026-11-04 00:16:21.000 IST
+6aea2ad66e44b330ff446e24,2301CS33,Nikhileswar,true,KalamD-317-btech23,Kalam,317,1,male,btech23,2026-11-04 00:16:21.250 IST
+6aea2ad66e44b330ff446e47,2301ME63,Awadhesh Sharma,true,KalamD-621-btech23,Kalam,621,1,male,btech23,2026-11-04 00:16:21.500 IST
+6aea2ad66e44b330ff446dce,2301AI03,Arush Singh Kiron,true,KalamC-401-btech23,Kalam,401,1,male,btech23,2026-11-04 00:16:21.750 IST
+6aea2ad66e44b330ff446ddb,2301ME47,Sparsh,true,KalamC-415-btech23,Kalam,415,1,male,btech23,2026-11-04 00:16:22.000 IST
+6aea2ad66e44b330ff446e18,2301EE09,Dinesh Siddhartha,true,KalamD-210-btech23,Kalam,210,1,male,btech23,2026-11-04 00:16:22.250 IST
+6aea2ad66e44b330ff446e11,2301CB21,Krunal,true,KalamC-719-btech23,Kalam,719,1,male,btech23,2026-11-04 00:16:22.500 IST
+6aea2ad66e44b330ff446dd0,2301AI47,Harsh Raj,true,KalamC-403-btech23,Kalam,403,1,male,btech23,2026-11-04 00:16:22.750 IST
+6aea2ad66e44b330ff446dc9,2301EC54,Adwik Verma,true,KalamC-315-btech23,Kalam,315,1,male,btech23,2026-11-04 00:16:23.000 IST
+6aea2ad66e44b330ff446dee,2301PH19,Aekampreet,true,KalamC-514-btech23,Kalam,514,1,male,btech23,2026-11-04 00:16:23.250 IST
+6aea2ad66e44b330ff446df5,2301EC58,Abhijat Jha,true,KalamC-601-btech23,Kalam,601,1,male,btech23,2026-11-04 00:16:23.500 IST
+6aea2ad66e44b330ff446db9,2302ST02,Dikshant Khobragade,true,KalamC-212-btech23,Kalam,212,1,male,btech23,2026-11-04 00:16:23.750 IST
+6aea2ad66e44b330ff446e23,2301CT19,Vihang Kokane,true,KalamD-312-btech23,Kalam,312,1,male,btech23,2026-11-04 00:16:24.000 IST
+6aea2ad66e44b330ff446dcd,2301EE36,Rishu Kumar Singh,true,KalamC-321-btech23,Kalam,321,1,male,btech23,2026-11-04 00:16:24.250 IST
+6aea2ad66e44b330ff446e0e,2301ME48,Jayanth Malladi,true,KalamC-715-btech23,Kalam,715,1,male,btech23,2026-11-04 00:16:24.500 IST
+6aea2ad66e44b330ff446df7,2301CE58,Shivansh Sinha,true,KalamC-604-btech23,Kalam,604,1,male,btech23,2026-11-04 00:16:24.750 IST
+6aea2ad66e44b330ff446de8,2301CS59,Tanay,true,KalamC-508-btech23,Kalam,508,1,male,btech23,2026-11-04 00:16:25.000 IST
+6aea2ad66e44b330ff446dde,2301MM12,Prabhraj Singh,true,KalamC-418-btech23,Kalam,418,1,male,btech23,2026-11-04 00:16:25.250 IST
+6aea2ad66e44b330ff446e14,2301EC34,Vansh Shrivastava,true,KalamD-034-btech23,Kalam,034,1,male,btech23,2026-11-04 00:16:25.500 IST
+6aea2ad66e44b330ff446db1,2301MC40,Anish Kumar,true,KalamC-119-btech23,Kalam,119,1,male,btech23,2026-11-04 00:16:25.750 IST
+6aea2ad66e44b330ff446e4b,2301PH03,Aditya Prakash Gupta,true,KalamD-633-btech23,Kalam,633,1,male,btech23,2026-11-04 00:16:26.000 IST
+6aea2ad66e44b330ff446e1d,2301EE56,Shaurya,true,KalamD-303-btech23,Kalam,303,1,male,btech23,2026-11-04 00:16:26.250 IST
+6aea2ad66e44b330ff446dc6,2301EE51,Yatharth Gupta,true,KalamC-312-btech23,Kalam,312,1,male,btech23,2026-11-04 00:16:26.500 IST
+6aea2ad66e44b330ff446e3c,2302MT04,Sushanth Yelishetty,true,KalamD-532-btech23,Kalam,532,1,male,btech23,2026-11-04 00:16:26.750 IST
+6aea2ad66e44b330ff446dfd,2301MM07,Deepesh Kumar,true,KalamC-615-btech23,Kalam,615,1,male,btech23,2026-11-04 00:16:27.000 IST
+6aea2ad66e44b330ff446db4,2301AI38,Nishant Kumar,true,KalamC-203-btech23,Kalam,203,1,male,btech23,2026-11-04 00:16:27.250 IST
+6aea2ad66e44b330ff446e26,2301AI18,Rahul Jilowa,true,KalamD-328-btech23,Kalam,328,1,male,btech23,2026-11-04 00:16:27.500 IST
+6aea2ad66e44b330ff446db2,2301EE02,Abhinandan Pandey,true,KalamC-120-btech23,Kalam,120,1,male,btech23,2026-11-04 00:16:27.750 IST
+6aea2ad66e44b330ff446db8,2301EE52,Abhitesh Shukla,true,KalamC-211-btech23,Kalam,211,1,male,btech23,2026-11-04 00:16:28.000 IST
+6aea2ad66e44b330ff446dbb,2301CE43,Jitendra Bhukhar,true,KalamC-218-btech23,Kalam,218,1,male,btech23,2026-11-04 00:16:28.250 IST
+6aea2ad66e44b330ff446e3f,2301MC36,PAJJUR SIDDHARTHA REDDY,true,KalamD-603-btech23,Kalam,603,1,male,btech23,2026-11-04 00:16:28.500 IST
+6aea2ad66e44b330ff446ddd,2301ME05,Aman,true,KalamC-417-btech23,Kalam,417,1,male,btech23,2026-11-04 00:16:28.750 IST
+6aea2ad66e44b330ff446e0f,2303ME12,Shekhar,true,KalamC-717-btech23,Kalam,717,1,male,btech23,2026-11-04 00:16:29.000 IST
+6aea2ad66e44b330ff446dbd,2301CS25,Krishan Kumawat,true,KalamC-220-btech23,Kalam,220,1,male,btech23,2026-11-04 00:16:29.250 IST
+6aea2ad66e44b330ff446de4,2301CE35,Uddish Katyal,true,KalamC-503-btech23,Kalam,503,1,male,btech23,2026-11-04 00:16:29.500 IST
+6aea2ad66e44b330ff446def,2301ME66,Venkatesh Mishra,true,KalamC-515-btech23,Kalam,515,1,male,btech23,2026-11-04 00:16:29.750 IST
+6aea2ad66e44b330ff446e08,2301MM27,Faiz,true,KalamC-707-btech23,Kalam,707,1,male,btech23,2026-11-04 00:16:30.000 IST
+6aea2ad66e44b330ff446e19,2301CS44,Sai Vardhan,true,KalamD-204-btech23,Kalam,204,1,male,btech23,2026-11-04 00:16:30.250 IST
+6aea2ad66e44b330ff446de3,2301CS13,Chirag Garg,true,KalamC-502-btech23,Kalam,502,1,male,btech23,2026-11-04 00:16:30.500 IST
+6aea2ad66e44b330ff446deb,2301MC42,Garvit Dua,true,KalamC-511-btech23,Kalam,511,1,male,btech23,2026-11-04 00:16:30.750 IST
+6aea2ad66e44b330ff446e35,2302CS01,Ansh Prem,true,KalamD-433-btech23,Kalam,433,1,male,btech23,2026-11-04 00:16:31.000 IST
+6aea2ad66e44b330ff446e32,2301AI30,Tejas Tanmay Singh,true,KalamD-428-btech23,Kalam,428,1,male,btech23,2026-11-04 00:16:31.250 IST
+6aea2ad66e44b330ff446de0,2301AI23,Soumyajyoti Mohanta,true,KalamC-420-btech23,Kalam,420,1,male,btech23,2026-11-04 00:16:31.500 IST
+6aea2ad66e44b330ff446dd8,2301AI20,Sasmit Shaswat,true,KalamC-412-btech23,Kalam,412,1,male,btech23,2026-11-04 00:16:31.750 IST
+6aea2ad66e44b330ff446e31,2301CE41,Devashish Negi,true,KalamD-416-btech23,Kalam,416,1,male,btech23,2026-11-04 00:16:32.000 IST
+6aea2ad66e44b330ff446dea,2301CB33,Pranav Gupta,true,KalamC-510-btech23,Kalam,510,1,male,btech23,2026-11-04 00:16:32.250 IST
+6aea2ad66e44b330ff446dc7,2302CM08,Jayinaskha Vyas,true,KalamC-313-btech23,Kalam,313,1,male,btech23,2026-11-04 00:16:32.500 IST
+6aea2ad66e44b330ff446e3e,2301MC05,Bharadwaj,true,KalamD-602-btech23,Kalam,602,1,male,btech23,2026-11-04 00:16:32.750 IST
+6aea2ad66e44b330ff446e45,2301CS26,Krishna Gupta,true,KalamD-615-btech23,Kalam,615,1,male,btech23,2026-11-04 00:16:33.000 IST
+6aea2ad66e44b330ff446e43,2301EC17,Nishant Rajput,true,KalamD-613-btech23,Kalam,613,1,male,btech23,2026-11-04 00:16:33.250 IST
+6aea2ad66e44b330ff446dda,2301MM25,Viraj Kulkarni,true,KalamC-414-btech23,Kalam,414,1,male,btech23,2026-11-04 00:16:33.500 IST
+6aea2ad66e44b330ff446dc8,2302CM02,Anurag Semwal,true,KalamC-314-btech23,Kalam,314,1,male,btech23,2026-11-04 00:16:33.750 IST
+6aea2ad66e44b330ff446e2d,2301CS65,Gopireddy Gunavardhan Reddy,true,KalamD-405-btech23,Kalam,405,1,male,btech23,2026-11-04 00:16:34.000 IST
+6aea2ad66e44b330ff446e05,2301PH23,Farhan,true,KalamC-704-btech23,Kalam,704,1,male,btech23,2026-11-04 00:16:34.250 IST
+6aea2ad66e44b330ff446e07,2301MM31,Sanskar Sahu,true,KalamC-706-btech23,Kalam,706,1,male,btech23,2026-11-04 00:16:34.500 IST
+6aea2ad66e44b330ff446e34,2301CS56,Trupti Sriharshith,true,KalamD-431-btech23,Kalam,431,1,male,btech23,2026-11-04 00:16:34.750 IST
+6aea2ad66e44b330ff446ddf,2301ME45,Sanit Sinha,true,KalamC-419-btech23,Kalam,419,1,male,btech23,2026-11-04 00:16:35.000 IST
+6aea2ad66e44b330ff446dd3,2301EC53,Nishant Kumar,true,KalamC-406-btech23,Kalam,406,1,male,btech23,2026-11-04 00:16:35.250 IST
+6aea2ad66e44b330ff446e21,2302GT05,Tuhin,true,KalamD-310-btech23,Kalam,310,1,male,btech23,2026-11-04 00:16:35.500 IST
+6aea2ad66e44b330ff446e0d,2303ME03,Aditya Gupta,true,KalamC-714-btech23,Kalam,714,1,male,btech23,2026-11-04 00:16:35.750 IST
+6aea2ad66e44b330ff446dff,2301MM37,Anshul Verma,true,KalamC-618-btech23,Kalam,618,1,male,btech23,2026-11-04 00:16:36.000 IST
+6aea2ad66e44b330ff446e2b,2301CB35,Pratik Mishra,true,KalamD-402-btech23,Kalam,402,1,male,btech23,2026-11-04 00:16:36.250 IST
+6aea2ad66e44b330ff446e1c,2301MC59,Pranshu,true,KalamD-302-btech23,Kalam,302,1,male,btech23,2026-11-04 00:16:36.500 IST
+6aea2ad66e44b330ff446e38,2301AI52,Piyush Subhash Ghegade,true,KalamD-521-btech23,Kalam,521,1,male,btech23,2026-11-04 00:16:36.750 IST
+6aea2ad66e44b330ff446e3a,2301CE05,Anupam Sharma,true,KalamD-530-btech23,Kalam,530,1,male,btech23,2026-11-04 00:16:37.000 IST
+6aea2ad66e44b330ff446dc0,2301PH02,Aditya Mittal,true,KalamC-304-btech23,Kalam,304,1,male,btech23,2026-11-04 00:16:37.250 IST
+6aea2ad66e44b330ff446db6,2301PH06,Arunvishal,true,KalamC-207-btech23,Kalam,207,1,male,btech23,2026-11-04 00:16:37.500 IST
+6aea2ad66e44b330ff446e29,2301CB34,Prashant,true,KalamD-335-btech23,Kalam,335,1,male,btech23,2026-11-04 00:16:37.750 IST
+6aea2ad66e44b330ff446dd6,2301AI48,Abhay Pratap Singh,true,KalamC-410-btech23,Kalam,410,1,male,btech23,2026-11-04 00:16:38.000 IST
+6aea2ad66e44b330ff446e37,2301CS79,Sanjay Dasu,true,KalamD-504-btech23,Kalam,504,1,male,btech23,2026-11-04 00:16:38.250 IST
+6aea2ad66e44b330ff446e00,2301EE54,Aniket Sinha,true,KalamC-620-btech23,Kalam,620,1,male,btech23,2026-11-04 00:16:38.500 IST
+6aea2ad66e44b330ff446dec,2301MC29,Sumit,true,KalamC-512-btech23,Kalam,512,1,male,btech23,2026-11-04 00:16:38.750 IST
+6aea2ad66e44b330ff446de5,2302GT01,Daksh Bhatti,true,KalamC-505-btech23,Kalam,505,1,male,btech23,2026-11-04 00:16:39.000 IST
+6aea2ad66e44b330ff446df3,2301MM29,Aviral Awasthi,true,KalamC-520-btech23,Kalam,520,1,male,btech23,2026-11-04 00:16:39.250 IST
+6aea2ad66e44b330ff446ddc,2301EE55,Abhay Varshney,true,KalamC-416-btech23,Kalam,416,1,male,btech23,2026-11-04 00:16:39.500 IST
+6aea2ad66e44b330ff446dc2,2301MC54,Abhinandan Porwal,true,KalamC-306-btech23,Kalam,306,1,male,btech23,2026-11-04 00:16:39.750 IST
+6aea2ad66e44b330ff446e36,2301ME80,Vinay Khedkar,true,KalamD-501-btech23,Kalam,501,1,male,btech23,2026-11-04 00:16:40.000 IST
+6aea2ad66e44b330ff446e13,2301CB54,Mayank Singh,true,KalamD-025-btech23,Kalam,025,1,male,btech23,2026-11-04 00:16:40.250 IST
+6aea2ad66e44b330ff446e1f,2302MC12,Yagyesh,true,KalamD-305-btech23,Kalam,305,1,male,btech23,2026-11-04 00:16:40.500 IST
+6aea2ad66e44b330ff446dcc,2301CB01,Aadhar,true,KalamC-320-btech23,Kalam,320,1,male,btech23,2026-11-04 00:16:40.750 IST
+6aea2ad66e44b330ff446e46,2301ME16,Devrat tewatiya,true,KalamD-620-btech23,Kalam,620,1,male,btech23,2026-11-04 00:16:41.000 IST
+6aea2c115d329e5cdb007a20,2301MC35,Ravindra Bhati,true,KalamD-231-btech23,Kalam,231,1,male,btech23,2026-11-04 00:16:41.357 IST
+6aea2c145d329e5cdb007a21,2301CS86,Soumyakanta Panda,true,KalamC-201-btech23,Kalam,201,1,male,btech23,2026-11-04 00:16:44.543 IST
+6aea2c165d329e5cdb007a22,2301CT37,Tushar Pramod Kohale,true,KalamD-605-btech23,Kalam,605,1,male,btech23,2026-11-04 00:16:46.593 IST
+6aea2c165d329e5cdb007a23,2301EC39,Ashish Raj,true,KalamD-309-btech23,Kalam,309,1,male,btech23,2026-11-04 00:16:46.987 IST
+6aea2c185d329e5cdb007a24,2301EE50,Mriganka Santra,true,KalamD-419-btech23,Kalam,419,1,male,btech23,2026-11-04 00:16:48.950 IST
+6aea2c195d329e5cdb007a25,2301AI14,Navaneeth Nalla,true,KalamD-221-btech23,Kalam,221,1,male,btech23,2026-11-04 00:16:49.093 IST
+6aea2c195d329e5cdb007a26,2301EC30,Seelam Snehan,true,KalamD-425-btech23,Kalam,425,1,male,btech23,2026-11-04 00:16:49.539 IST
+6aea2c1a5d329e5cdb007a27,2301CT26,Yash Vardhan Tyoharia,true,KalamD-332-btech23,Kalam,332,1,male,btech23,2026-11-04 00:16:50.265 IST
+6aea2c1a5d329e5cdb007a28,2301AI33,Venkata Bhuvan Kosuru,true,KalamD-216-btech23,Kalam,216,1,male,btech23,2026-11-04 00:16:50.533 IST
+6aea2c1a5d329e5cdb007a29,2301CS24,Khaled Hussain Mohammed,true,KalamD-512-btech23,Kalam,512,1,male,btech23,2026-11-04 00:16:50.751 IST
+6aea2c1d5d329e5cdb007a2a,2301CB09,Ashwani Kumar,true,KalamD-417-btech23,Kalam,417,1,male,btech23,2026-11-04 00:16:53.070 IST
+6aea2c1d5d329e5cdb007a2b,2301ME30,Mayank Singh,true,KalamD-403-btech23,Kalam,403,1,male,btech23,2026-11-04 00:16:53.556 IST
+6aea2c1e5d329e5cdb007a2c,2301MC57,Kushal Kesharwani,true,KalamD-514-btech23,Kalam,514,1,male,btech23,2026-11-04 00:16:54.942 IST
+6aea2c1f5d329e5cdb007a2d,2301MC31,Utkarsh Kumar,true,KalamC-202-btech23,Kalam,202,1,male,btech23,2026-11-04 00:16:55.061 IST
+6aea2c215d329e5cdb007a2e,2301ME34,Mohit Meena,true,KalamD-704-btech23,Kalam,704,1,male,btech23,2026-11-04 00:16:57.441 IST
+6aea2c215d329e5cdb007a2f,2301EC33,Ujwal A R,true,KalamD-709-btech23,Kalam,709,1,male,btech23,2026-11-04 00:16:57.766 IST
+6aea2c225d329e5cdb007a30,2301ME71,Shiv Kumar,true,KalamD-236-btech23,Kalam,236,1,male,btech23,2026-11-04 00:16:58.273 IST
+6aea2c235d329e5cdb007a31,2301EE26,Shubham Madheshiya,true,KalamD-616-btech23,Kalam,616,1,male,btech23,2026-11-04 00:16:59.662 IST
+6aea2c255d329e5cdb007a32,2301CS22,Hemanth Kumar Katariya,true,KalamC-710-btech23,Kalam,710,1,male,btech23,2026-11-04 00:17:01.143 IST
+6aea2c285d329e5cdb007a33,2302ST07,Sravan Kumar Nallapu,true,KalamD-634-btech23,Kalam,634,1,male,btech23,2026-11-04 00:17:04.037 IST
+6aea2c285d329e5cdb007a34,2302ST06,Kowtharapu Venkata Vaishnav Nath,true,KalamD-434-btech23,Kalam,434,1,male,btech23,2026-11-04 00:17:04.340 IST
+6aea2c285d329e5cdb007a35,2302PC09,Praveen Deepak Koripalli,true,KalamD-107-btech23,Kalam,107,1,male,btech23,2026-11-04 00:17:04.741 IST
+6aea2c295d329e5cdb007a36,2301CT14,Prajyot Shirish Khandade,true,KalamD-608-btech23,Kalam,608,1,male,btech23,2026-11-04 00:17:05.833 IST
+6aea2c2e5d329e5cdb007a37,2301PH14,Ratan Deep Prasad,true,KalamD-314-btech23,Kalam,314,1,male,btech23,2026-11-04 00:17:10.011 IST
+6aea2c2e5d329e5cdb007a38,2301MC21,Rahul Singh Meena,true,KalamD-703-btech23,Kalam,703,1,male,btech23,2026-11-04 00:17:10.346 IST
+6aea2c2e5d329e5cdb007a39,2301CS43,Sai Skrithik Kottapally,true,KalamD-523-btech23,Kalam,523,1,male,btech23,2026-11-04 00:17:10.516 IST
+6aea2c2f5d329e5cdb007a3a,2302PC08,Subodh Vidyaman Lihitkar,true,KalamD-117-btech23,Kalam,117,1,male,btech23,2026-11-04 00:17:11.419 IST
+6aea2c315d329e5cdb007a3b,2301CB37,Pushpank Garg,true,KalamD-320-btech23,Kalam,320,1,male,btech23,2026-11-04 00:17:13.942 IST
+6aea2c335d329e5cdb007a3c,2301CT15,Rahul Raj,true,KalamD-318-btech23,Kalam,318,1,male,btech23,2026-11-04 00:17:15.464 IST
+6aea2c345d329e5cdb007a3d,2301CT23,Krishna Tripathi,true,KalamD-235-btech23,Kalam,235,1,male,btech23,2026-11-04 00:17:16.943 IST
+6aea2c385d329e5cdb007a3e,2301EE58,Sagar Kumar,true,KalamD-330-btech23,Kalam,330,1,male,btech23,2026-11-04 00:17:20.547 IST
+6aea2c395d329e5cdb007a3f,2301CE19,Nomo Rubu,true,KalamC-116-btech23,Kalam,116,1,male,btech23,2026-11-04 00:17:21.549 IST
+6aea2c3d5d329e5cdb007a40,2302MT09,Sonu Kumar,true,KalamD-103-btech23,Kalam,103,1,male,btech23,2026-11-04 00:17:25.380 IST
+6aea2c3e5d329e5cdb007a41,2301MC22,Rajit Anand,true,KalamC-214-btech23,Kalam,214,1,male,btech23,2026-11-04 00:17:26.035 IST
+6aea2c425d329e5cdb007a42,2301CE39,Vidhan Bansal,true,KalamD-319-btech23,Kalam,319,1,male,btech23,2026-11-04 00:17:30.026 IST
+6aea2c475d329e5cdb007a43,2302PC04,Shashank Deep,true,KalamD-118-btech23,Kalam,118,1,male,btech23,2026-11-04 00:17:35.043 IST
+6aea2c475d329e5cdb007a44,2301PH01,Aditya Chandra,true,KalamD-313-btech23,Kalam,313,1,male,btech23,2026-11-04 00:17:35.553 IST
+6aea2c4e5d329e5cdb007a45,2302ST03,Parth Sharma,true,KalamD-322-btech23,Kalam,322,1,male,btech23,2026-11-04 00:17:42.233 IST
+6aea2c535d329e5cdb007a46,2301CS48,Sandeep Kumar,true,KalamD-213-btech23,Kalam,213,1,male,btech23,2026-11-04 00:17:47.888 IST
+6aea2c575d329e5cdb007a47,2302CM07,Ankit Kumar Kero,true,KalamD-201-btech23,Kalam,201,1,male,btech23,2026-11-04 00:17:51.077 IST
+6aea2c5e5d329e5cdb007a48,2301CS80,Prateek Bunker,true,KalamD-214-btech23,Kalam,214,1,male,btech23,2026-11-04 00:17:58.507 IST
+6aea2c5f5d329e5cdb007a49,2301MM13,Rishabh Singh,true,KalamD-331-btech23,Kalam,331,1,male,btech23,2026-11-04 00:17:59.341 IST
+6aea2c605d329e5cdb007a4a,2302MT02,Kartikey Vishwakarma,true,KalamC-408-btech23,Kalam,408,1,male,btech23,2026-11-04 00:18:00.864 IST
+6aea2c625d329e5cdb007a4b,2301ME35,Mohit Sahu,true,KalamD-234-btech23,Kalam,234,1,male,btech23,2026-11-04 00:18:02.900 IST
+6aea2c635d329e5cdb007a4c,2302VL08,Vijay Garg,true,KalamC-215-btech23,Kalam,215,1,male,btech23,2026-11-04 00:18:03.032 IST
+6aea2c635d329e5cdb007a4d,2301ME55,Vishal Reddy Yadama,true,KalamD-323-btech23,Kalam,323,1,male,btech23,2026-11-04 00:18:03.307 IST
+6aea2c655d329e5cdb007a4e,2301AI16,Nithin Nayak Guguloth,true,KalamD-624-btech23,Kalam,624,1,male,btech23,2026-11-04 00:18:05.462 IST
+6aea2c665d329e5cdb007a4f,2301CE04,Ankur Gupta,true,KalamC-209-btech23,Kalam,209,1,male,btech23,2026-11-04 00:18:06.630 IST
+6aea2c675d329e5cdb007a50,2301CB05,Anshul Rathour,true,KalamC-204-btech23,Kalam,204,1,male,btech23,2026-11-04 00:18:07.960 IST
+6aea2c685d329e5cdb007a51,2301CE20,Prajyoth Mantri,true,KalamD-626-btech23,Kalam,626,1,male,btech23,2026-11-04 00:18:08.019 IST
+6aea2c685d329e5cdb007a52,2301PH16,Shivam Kumar Kannojia,true,KalamD-129-btech23,Kalam,129,1,male,btech23,2026-11-04 00:18:08.823 IST
+6aea2c695d329e5cdb007a53,2301ME74,Ganesh Sreenivasa Reddy Bodeddula,true,KalamD-635-btech23,Kalam,635,1,male,btech23,2026-11-04 00:18:09.245 IST
+6aea2c6b5d329e5cdb007a54,2301MC16,Maneesh Kumar Reddy Kalakota,true,KalamD-533-btech23,Kalam,533,1,male,btech23,2026-11-04 00:18:11.940 IST
+6aea2c6f5d329e5cdb007a55,2301EE22,Rohit Gupta,true,KalamD-515-btech23,Kalam,515,1,male,btech23,2026-11-04 00:18:15.450 IST
+6aea2c705d329e5cdb007a56,2301MC20,Pushpendra Choure,true,KalamC-115-btech23,Kalam,115,1,male,btech23,2026-11-04 00:18:16.017 IST
+6aea2c715d329e5cdb007a57,2301CB48,Ganjewar Parth Sanjay,true,KalamD-631-btech23,Kalam,631,1,male,btech23,2026-11-04 00:18:17.236 IST
+6aea2c725d329e5cdb007a58,2301CS93,Kalp Alpesh Shah,true,KalamC-619-btech23,Kalam,619,1,male,btech23,2026-11-04 00:18:18.157 IST
+6aea2c725d329e5cdb007a59,2301EC19,Paavan Sankeerth Inampudi,true,KalamD-636-btech23,Kalam,636,1,male,btech23,2026-11-04 00:18:18.773 IST
+6aea2c755d329e5cdb007a5a,2301ME26,Kshitij Vinay Vasule,true,KalamC-711-btech23,Kalam,711,1,male,btech23,2026-11-04 00:18:21.777 IST
+6aea2c765d329e5cdb007a5b,2301MM06,Bharat Kumar,true,KalamB-508-btech23,Kalam,508,1,male,btech23,2026-11-04 00:18:22.501 IST
+6aea2c765d329e5cdb007a5c,2301CE15,Karnav Bhattacharya,true,KalamD-024-btech23,Kalam,024,1,male,btech23,2026-11-04 00:18:22.891 IST
+6aea2c785d329e5cdb007a5d,2301MC32,Utkarsh Verma,true,KalamD-610-btech23,Kalam,610,1,male,btech23,2026-11-04 00:18:24.466 IST
+6aea2c785d329e5cdb007a5e,2301ME57,Abhay Prajapati,true,KalamD-408-btech23,Kalam,408,1,male,btech23,2026-11-04 00:18:24.595 IST
+6aea2c7a5d329e5cdb007a5f,2301ME56,Vishwa Teja Kondabathini,true,KalamD-535-btech23,Kalam,535,1,male,btech23,2026-11-04 00:18:26.283 IST
+6aea2c7b5d329e5cdb007a60,2301EE53,Aman Raj Saurav,true,KalamD-618-btech23,Kalam,618,1,male,btech23,2026-11-04 00:18:27.174 IST
+6aea2c7e5d329e5cdb007a61,2301CE03,Ankit Bhagat,true,KalamD-502-btech23,Kalam,502,1,male,btech23,2026-11-04 00:18:30.393 IST
+6aea2c7e5d329e5cdb007a62,2301CS34,Nithin Prasannakumar Reddy Panditi,true,KalamD-736-btech23,Kalam,736,1,male,btech23,2026-11-04 00:18:30.950 IST
+6aea2c7f5d329e5cdb007a63,2301AI32,Uday Srivastava,true,KalamD-212-btech23,Kalam,212,1,male,btech23,2026-11-04 00:18:31.101 IST
+6aea2c805d329e5cdb007a64,2301MM23,Kshitij Prakash,true,KalamD-326-btech23,Kalam,326,1,male,btech23,2026-11-04 00:18:32.851 IST
+6aea2c815d329e5cdb007a65,2301PH08,Azariah Peter,true,KalamD-130-btech23,Kalam,130,1,male,btech23,2026-11-04 00:18:33.313 IST
+6aea2c825d329e5cdb007a66,2301CS16,Eshan Bhaskar,true,KalamC-103-btech23,Kalam,103,1,male,btech23,2026-11-04 00:18:34.146 IST
+6aea2c825d329e5cdb007a67,2302GT08,Shibanshu Soubhagya Das,true,KalamD-625-btech23,Kalam,625,1,male,btech23,2026-11-04 00:18:34.857 IST
+6aea2c835d329e5cdb007a68,2301PH31,Sridutt Rugada,true,KalamD-623-btech23,Kalam,623,1,male,btech23,2026-11-04 00:18:35.678 IST
+6aea2c865d329e5cdb007a69,2301CS84,Shreesh Gangadhar Polawar,true,KalamD-622-btech23,Kalam,622,1,male,btech23,2026-11-04 00:18:38.232 IST
+6aea2c875d329e5cdb007a6a,2301CT07,Ayavanth Kumar,true,KalamD-125-btech23,Kalam,125,1,male,btech23,2026-11-04 00:18:39.208 IST
+6aea2c875d329e5cdb007a6b,2302CS02,Koushik Chennupati,true,KalamD-410-btech23,Kalam,410,1,male,btech23,2026-11-04 00:18:39.684 IST
+6aea2c885d329e5cdb007a6c,2301MM26,Abhishek Indoliya,true,KalamB-509-btech23,Kalam,509,1,male,btech23,2026-11-04 00:18:40.538 IST
+6aea2c8a5d329e5cdb007a6d,2301CT31,Abhay Soni,true,KalamD-132-btech23,Kalam,132,1,male,btech23,2026-11-04 00:18:42.003 IST
+6aea2c8a5d329e5cdb007a6e,2301ME77,Tripurari Kumar,true,KalamD-208-btech23,Kalam,208,1,male,btech23,2026-11-04 00:18:42.101 IST
+6aea2c8b5d329e5cdb007a6f,2301CB36,Pratyush Gupta,true,KalamD-121-btech23,Kalam,121,1,male,btech23,2026-11-04 00:18:43.418 IST
+6aea2c8d5d329e5cdb007a70,2301EE34,Tejas Raju Panzade,true,KalamD-526-btech23,Kalam,526,1,male,btech23,2026-11-04 00:18:45.071 IST
+6aea2c8f5d329e5cdb007a71,2301ME11,Ayush Uday Kumar,true,KalamD-418-btech23,Kalam,418,1,male,btech23,2026-11-04 00:18:47.243 IST
+6aea2c8f5d329e5cdb007a72,2301MC08,Harsh Upadhyay,true,KalamD-528-btech23,Kalam,528,1,male,btech23,2026-11-04 00:18:47.368 IST
+6aea2c8f5d329e5cdb007a73,2301EC08,Ayush Kumar,true,KalamD-111-btech23,Kalam,111,1,male,btech23,2026-11-04 00:18:47.646 IST
+6aea2c915d329e5cdb007a74,2301ME25,Koushik Venkata Kondaveti,true,KalamD-505-btech23,Kalam,505,1,male,btech23,2026-11-04 00:18:49.359 IST
+6aea2c915d329e5cdb007a75,2301CB57,Ankit Chatterjee,true,KalamD-509-btech23,Kalam,509,1,male,btech23,2026-11-04 00:18:49.434 IST
+6aea2c925d329e5cdb007a76,2301CB38,Rahul Kumar,true,KalamC-303-btech23,Kalam,303,1,male,btech23,2026-11-04 00:18:50.090 IST
+6aea2c925d329e5cdb007a77,2301CB52,Jaswanth Nalagothula,true,KalamD-232-btech23,Kalam,232,1,male,btech23,2026-11-04 00:18:50.335 IST
+6aea2c975d329e5cdb007a78,2302GT04,Vishnu Vardhan Ramavath,true,KalamD-534-btech23,Kalam,534,1,male,btech23,2026-11-04 00:18:55.030 IST
+6aea2c985d329e5cdb007a79,2301CB42,Shriyansh Tamboli,true,KalamD-105-btech23,Kalam,105,1,male,btech23,2026-11-04 00:18:56.933 IST
+6aea2c995d329e5cdb007a7a,2301CS71,Gali Uday Aditya,true,KalamD-426-btech23,Kalam,426,1,male,btech23,2026-11-04 00:18:57.867 IST
+6aea2c9e5d329e5cdb007a7b,2302CS04,Om Sanjeev Ronte,true,KalamD-420-btech23,Kalam,420,1,male,btech23,2026-11-04 00:19:02.033 IST
+6aea2ca05d329e5cdb007a7c,2301MC45,Vichitra Katariya,true,KalamD-511-btech23,Kalam,511,1,male,btech23,2026-11-04 00:19:04.357 IST
+6aea2ca25d329e5cdb007a7d,2301CE11,Gayathri Charan Adireddy,true,KalamD-413-btech23,Kalam,413,1,male,btech23,2026-11-04 00:19:06.107 IST
+6aea2ca25d329e5cdb007a7e,2301ME14,Chandan Seth,true,KalamD-412-btech23,Kalam,412,1,male,btech23,2026-11-04 00:19:06.328 IST
+6aea2ca25d329e5cdb007a7f,2301ME64,Kshitij Kumar Singh,true,KalamD-228-btech23,Kalam,228,1,male,btech23,2026-11-04 00:19:06.408 IST
+6aea2ca25d329e5cdb007a80,2301CS37,Rahen Boppani,true,KalamD-702-btech23,Kalam,702,1,male,btech23,2026-11-04 00:19:06.687 IST
+6aea2ca35d329e5cdb007a81,2301EE61,Tushar Garg,true,KalamC-307-btech23,Kalam,307,1,male,btech23,2026-11-04 00:19:07.232 IST
+6aea2ca45d329e5cdb007a82,2301CB55,Sridhar Sabavath,true,KalamB-512-btech23,Kalam,512,1,male,btech23,2026-11-04 00:19:08.614 IST
+6aea2ca45d329e5cdb007a83,2301CE68,Gaurav Beniwal,true,KalamD-423-btech23,Kalam,423,1,male,btech23,2026-11-04 00:19:08.665 IST
+6aea2ca45d329e5cdb007a84,2301EE11,Gaurav Sanjay Bhagure,true,KalamD-516-btech23,Kalam,516,1,male,btech23,2026-11-04 00:19:08.769 IST
+6aea2ca45d329e5cdb007a85,2301AI15,Neetish Kumar,true,KalamD-134-btech23,Kalam,134,1,male,btech23,2026-11-04 00:19:08.894 IST
+6aea2ca45d329e5cdb007a86,2302CM01,Akhil Pavan Pabolu,true,KalamD-205-btech23,Kalam,205,1,male,btech23,2026-11-04 00:19:08.947 IST
+6aea2ca55d329e5cdb007a87,2301AI41,N Krishna Pawar,true,KalamD-536-btech23,Kalam,536,1,male,btech23,2026-11-04 00:19:09.373 IST
+6aea2ca65d329e5cdb007a88,2301CE37,Gautam Kumar,true,KalamD-022-btech23,Kalam,022,1,male,btech23,2026-11-04 00:19:10.212 IST
+6aea2ca65d329e5cdb007a89,2301CE66,Shubham Shandilya,true,KalamD-327-btech23,Kalam,327,1,male,btech23,2026-11-04 00:19:10.349 IST
+6aea2ca75d329e5cdb007a8a,2302CM05,Lakshmi Sai Pavan Kumar Jagarlamudi,true,KalamD-119-btech23,Kalam,119,1,male,btech23,2026-11-04 00:19:11.155 IST
+6aea2ca75d329e5cdb007a8b,2301ME18,Gajendra,true,KalamC-317-btech23,Kalam,317,1,male,btech23,2026-11-04 00:19:11.365 IST
+6aea2ca75d329e5cdb007a8c,2301EC32,Subhadip Maji,true,KalamD-120-btech23,Kalam,120,1,male,btech23,2026-11-04 00:19:11.394 IST
+6aea2ca85d329e5cdb007a8d,2301MC25,Sai Charan Gundeboina,true,KalamD-720-btech23,Kalam,720,1,male,btech23,2026-11-04 00:19:12.263 IST
+6aea2ca85d329e5cdb007a8e,2301CS68,Tamtam Gnaneshwar,true,KalamD-217-btech23,Kalam,217,1,male,btech23,2026-11-04 00:19:12.509 IST
+6aea2ca85d329e5cdb007a8f,2301CT34,Chandu Kambadur,true,KalamD-506-btech23,Kalam,506,1,male,btech23,2026-11-04 00:19:12.532 IST
+6aea2ca85d329e5cdb007a90,2301EC51,Mayank Jha,true,KalamD-525-btech23,Kalam,525,1,male,btech23,2026-11-04 00:19:12.621 IST
+6aea2ca85d329e5cdb007a91,2301CB47,Atharv Bagde,true,KalamD-424-btech23,Kalam,424,1,male,btech23,2026-11-04 00:19:12.648 IST
+6aea2ca85d329e5cdb007a92,2301CS64,Yaswanth Jaya Vema Reddy Suda,true,KalamD-202-btech23,Kalam,202,1,male,btech23,2026-11-04 00:19:12.942 IST
+6aea2ca95d329e5cdb007a93,2301MC46,Mala Ram,true,KalamD-324-btech23,Kalam,324,1,male,btech23,2026-11-04 00:19:13.433 IST
+6aea2ca95d329e5cdb007a94,2301PH17,Shivang Rayat,true,KalamD-522-btech23,Kalam,522,1,male,btech23,2026-11-04 00:19:13.574 IST
+6aea2caa5d329e5cdb007a95,2301CS70,Edubilli Rajeev Aman,true,KalamD-325-btech23,Kalam,325,1,male,btech23,2026-11-04 00:19:14.872 IST
+6aea2cab5d329e5cdb007a96,2302VL02,K Ajay,true,KalamD-705-btech23,Kalam,705,1,male,btech23,2026-11-04 00:19:15.987 IST
+6aea2cac5d329e5cdb007a97,2301CS06,Ankesh Kumar,true,KalamC-104-btech23,Kalam,104,1,male,btech23,2026-11-04 00:19:16.633 IST
+6aea2cac5d329e5cdb007a98,2301MC24,Sai Bhargav Pamula,true,KalamD-517-btech23,Kalam,517,1,male,btech23,2026-11-04 00:19:16.950 IST
+6aea2cad5d329e5cdb007a99,2301CB64,Tejas Ganesh Jadhav,true,KalamC-114-btech23,Kalam,114,1,male,btech23,2026-11-04 00:19:17.115 IST
+6aea2cad5d329e5cdb007a9a,2301PH11,Naveen Saini,true,KalamC-516-btech23,Kalam,516,1,male,btech23,2026-11-04 00:19:17.483 IST
+6aea2cad5d329e5cdb007a9b,2301CS32,Murali Karthikeya Ramineni,true,KalamD-203-btech23,Kalam,203,1,male,btech23,2026-11-04 00:19:17.573 IST
+6aea2cad5d329e5cdb007a9c,2301CT20,Anish Kumar Jugnu,true,KalamD-436-btech23,Kalam,436,1,male,btech23,2026-11-04 00:19:17.971 IST
+6aea2cae5d329e5cdb007a9d,2301CS39,Rana Bharath Vaddimukkala,true,KalamD-422-btech23,Kalam,422,1,male,btech23,2026-11-04 00:19:18.719 IST
+6aea2caf5d329e5cdb007a9e,2301CB23,Lohith Veer Chinthalapudi,true,KalamD-218-btech23,Kalam,218,1,male,btech23,2026-11-04 00:19:19.285 IST
+6aea2caf5d329e5cdb007a9f,2301CE28,Someshwar Charagundla,true,KalamD-707-btech23,Kalam,707,1,male,btech23,2026-11-04 00:19:19.330 IST
+6aea2caf5d329e5cdb007aa0,2301MC07,Gnanesh Rayapudi,true,KalamD-507-btech23,Kalam,507,1,male,btech23,2026-11-04 00:19:19.835 IST
+6aea2cb05d329e5cdb007aa1,2301CS69,Dharmakar Lokesh,true,KalamD-226-btech23,Kalam,226,1,male,btech23,2026-11-04 00:19:20.094 IST
+6aea2cb05d329e5cdb007aa2,2301EE03,Abhishek Singh,true,KalamB-507-btech23,Kalam,507,1,male,btech23,2026-11-04 00:19:20.386 IST
+6aea2cb15d329e5cdb007aa3,2301CE62,Saurabh Kumar,true,KalamD-016-btech23,Kalam,016,1,male,btech23,2026-11-04 00:19:21.013 IST
+6aea2cb15d329e5cdb007aa4,2301MM21,Aaditya Chandra,true,KalamD-508-btech23,Kalam,508,1,male,btech23,2026-11-04 00:19:21.087 IST
+6aea2cb15d329e5cdb007aa5,2301ME53,Vinay Jonnakuti,true,KalamB-518-btech23,Kalam,518,1,male,btech23,2026-11-04 00:19:21.211 IST
+6aea2cb25d329e5cdb007aa6,2301CE34,Chiranjeevi Mogili,true,KalamD-721-btech23,Kalam,721,1,male,btech23,2026-11-04 00:19:22.119 IST
+6aea2cb25d329e5cdb007aa7,2301CB19,Simhadri Karthik,true,KalamD-529-btech23,Kalam,529,1,male,btech23,2026-11-04 00:19:22.366 IST
+6aea2cb45d329e5cdb007aa8,2301EE15,Manoj Kumar Pekala,true,KalamD-513-btech23,Kalam,513,1,male,btech23,2026-11-04 00:19:24.420 IST
+6aea2cb45d329e5cdb007aa9,2301CS17,Gowtham Chagalamarri,true,KalamD-206-btech23,Kalam,206,1,male,btech23,2026-11-04 00:19:24.600 IST
+6aea2cb45d329e5cdb007aaa,2301CB41,Sarthak Shukla,true,KalamD-110-btech23,Kalam,110,1,male,btech23,2026-11-04 00:19:24.927 IST
+6aea2cb45d329e5cdb007aab,2301AI04,Ayush Bansal,true,KalamD-225-btech23,Kalam,225,1,male,btech23,2026-11-04 00:19:24.942 IST
+6aea2cb55d329e5cdb007aac,2301PH29,Rakesh,true,KalamC-105-btech23,Kalam,105,1,male,btech23,2026-11-04 00:19:25.749 IST
+6aea2cb65d329e5cdb007aad,2301MM39,Pranay Bolli,true,KalamD-510-btech23,Kalam,510,1,male,btech23,2026-11-04 00:19:26.257 IST
+6aea2cb65d329e5cdb007aae,2301CB13,Dhoni Naik Gugulothu,true,KalamD-518-btech23,Kalam,518,1,male,btech23,2026-11-04 00:19:26.555 IST
+6aea2cb65d329e5cdb007aaf,2301EC05,Ankit Kumar,true,KalamD-230-btech23,Kalam,230,1,male,btech23,2026-11-04 00:19:26.868 IST
+6aea2cb75d329e5cdb007ab0,2301CT27,Divyansh Maurya,true,KalamD-710-btech23,Kalam,710,1,male,btech23,2026-11-04 00:19:27.107 IST
+6aea2cb75d329e5cdb007ab1,2301CE59,Venkata Pathi Azmeera,true,KalamD-122-btech23,Kalam,122,1,male,btech23,2026-11-04 00:19:27.442 IST
+6aea2cb85d329e5cdb007ab2,2301CB51,Ranjeet Maurya,true,KalamD-223-btech23,Kalam,223,1,male,btech23,2026-11-04 00:19:28.832 IST
+6aea2cb85d329e5cdb007ab3,2302CM04,Vinay Kethavath,true,KalamD-136-btech23,Kalam,136,1,male,btech23,2026-11-04 00:19:28.886 IST
+6aea2cb95d329e5cdb007ab4,2301CE64,Vishal Gond,true,KalamD-006-btech23,Kalam,006,1,male,btech23,2026-11-04 00:19:29.119 IST
+6aea2cba5d329e5cdb007ab5,2301CT09,Dinker Anand,true,KalamD-131-btech23,Kalam,131,1,male,btech23,2026-11-04 00:19:30.804 IST
+6aea2cbb5d329e5cdb007ab6,2301ME27,Lalit Thakur,true,KalamD-224-btech23,Kalam,224,1,male,btech23,2026-11-04 00:19:31.472 IST
+6aea2cbe5d329e5cdb007ab7,2301ME68,Nishchay Monga,true,KalamD-207-btech23,Kalam,207,1,male,btech23,2026-11-04 00:19:34.666 IST
+6aea2cbe5d329e5cdb007ab8,2301CB65,Manash Abhivir,true,KalamD-127-btech23,Kalam,127,1,male,btech23,2026-11-04 00:19:34.815 IST
+6aea2cbf5d329e5cdb007ab9,2301CE08,Bharath Eslavath,true,KalamD-123-btech23,Kalam,123,1,male,btech23,2026-11-04 00:19:35.229 IST
+6aea2cc15d329e5cdb007aba,2301CB58,Krish Raj Vaish,true,KalamB-504-btech23,Kalam,504,1,male,btech23,2026-11-04 00:19:37.228 IST
+6aea2cc15d329e5cdb007abb,2302VL09,Gandam Karthik,true,KalamD-101-btech23,Kalam,101,1,male,btech23,2026-11-04 00:19:37.295 IST
+6aea2cc15d329e5cdb007abc,2301MC26,Sarthak Kushwah,true,KalamC-109-btech23,Kalam,109,1,male,btech23,2026-11-04 00:19:37.303 IST
+6aea2cc25d329e5cdb007abd,2301ME73,Rahul Mali,true,KalamD-220-btech23,Kalam,220,1,male,btech23,2026-11-04 00:19:38.774 IST
+6aea2cc35d329e5cdb007abe,2301CS76,Shaikh Sahil,true,KalamD-723-btech23,Kalam,723,1,male,btech23,2026-11-04 00:19:39.577 IST
+6aea2cc45d329e5cdb007abf,2301CE54,Ayush,true,KalamC-110-btech23,Kalam,110,1,male,btech23,2026-11-04 00:19:40.514 IST
+6aea2cc45d329e5cdb007ac0,2301EC09,Chandra Shekar Azad Tejavath,true,KalamD-725-btech23,Kalam,725,1,male,btech23,2026-11-04 00:19:40.903 IST
+6aea2cc75d329e5cdb007ac1,2302VL06,Rahul Rathlavath,true,KalamD-102-btech23,Kalam,102,1,male,btech23,2026-11-04 00:19:43.501 IST
+6aea2cc85d329e5cdb007ac2,2301CB16,Het Ram,true,KalamD-708-btech23,Kalam,708,1,male,btech23,2026-11-04 00:19:44.759 IST
+6aea2cc95d329e5cdb007ac3,2301EC22,Rajith Kumar Mantrabuddi,true,KalamD-724-btech23,Kalam,724,1,male,btech23,2026-11-04 00:19:45.154 IST
+6aea2cc95d329e5cdb007ac4,2301ME78,Kodandarao Ganta,true,KalamB-320-btech23,Kalam,320,1,male,btech23,2026-11-04 00:19:45.626 IST
+6aea2cca5d329e5cdb007ac5,2301EC35,Abhishek Singh,true,KalamD-009-btech23,Kalam,009,1,male,btech23,2026-11-04 00:19:46.862 IST
+6aea2ccb5d329e5cdb007ac6,2301CE45,Sonu Kumar,true,KalamD-023-btech23,Kalam,023,1,male,btech23,2026-11-04 00:19:47.722 IST
+6aea2ccb5d329e5cdb007ac7,2301CS82,Raushan Raj,true,KalamC-118-btech23,Kalam,118,1,male,btech23,2026-11-04 00:19:47.887 IST
+6aea2ccc5d329e5cdb007ac8,2301CE57,Lire Nirin,true,KalamB-415-btech23,Kalam,415,1,male,btech23,2026-11-04 00:19:48.068 IST
+6aea2ccc5d329e5cdb007ac9,2302VL03,Kiran Kumar Bommu,true,KalamD-712-btech23,Kalam,712,1,male,btech23,2026-11-04 00:19:48.807 IST
+6aea2ccd5d329e5cdb007aca,2301CB07,Anurag Prasad,true,KalamD-133-btech23,Kalam,133,1,male,btech23,2026-11-04 00:19:49.520 IST
+6aea2cce5d329e5cdb007acb,2301CT02,Abhisek Jena,true,KalamB-505-btech23,Kalam,505,1,male,btech23,2026-11-04 00:19:50.058 IST
+6aea2ccf5d329e5cdb007acc,2301MC13,Kulshreshtha Singh,true,KalamC-107-btech23,Kalam,107,1,male,btech23,2026-11-04 00:19:51.103 IST
+6aea2cd15d329e5cdb007acd,2301EC48,Kalyan Adithya Eslavath,true,KalamD-719-btech23,Kalam,719,1,male,btech23,2026-11-04 00:19:53.923 IST
+6aea2cd35d329e5cdb007ace,2301MC15,Mahipal Maddu,true,KalamC-117-btech23,Kalam,117,1,male,btech23,2026-11-04 00:19:55.889 IST
+6aea2cd45d329e5cdb007acf,2301MC49,Shakib Akhtar,true,KalamD-108-btech23,Kalam,108,1,male,btech23,2026-11-04 00:19:56.692 IST
+6aea2cd55d329e5cdb007ad0,2302VL04,Naveen Reddy Vutukuri,true,KalamD-135-btech23,Kalam,135,1,male,btech23,2026-11-04 00:19:57.284 IST
+6aea2cd55d329e5cdb007ad1,2301CE38,Sachin Kumar Singh,true,KalamD-711-btech23,Kalam,711,1,male,btech23,2026-11-04 00:19:57.447 IST
+6aea2cd55d329e5cdb007ad2,2301MC51,Aditya Gupta,true,KalamC-106-btech23,Kalam,106,1,male,btech23,2026-11-04 00:19:57.710 IST
+6aea2cd85d329e5cdb007ad3,2301CE52,Aman Kumar,true,KalamB-414-btech23,Kalam,414,1,male,btech23,2026-11-04 00:20:00.371 IST
+6aea2cdd5d329e5cdb007ad4,2301EC56,Saksham Srivastava,true,KalamD-104-btech23,Kalam,104,1,male,btech23,2026-11-04 00:20:05.176 IST
+6aea2cdd5d329e5cdb007ad5,2301CE65,Akash Kumar,true,KalamB-412-btech23,Kalam,412,1,male,btech23,2026-11-04 00:20:05.373 IST
+6aea2cdd5d329e5cdb007ad6,2301CS81,Dinesh Shankhala,true,KalamD-124-btech23,Kalam,124,1,male,btech23,2026-11-04 00:20:05.482 IST
+6aea2cdd5d329e5cdb007ad7,2302PC10,Arshdeep Singh Sokhi,true,KalamB-413-btech23,Kalam,413,1,male,btech23,2026-11-04 00:20:05.702 IST
+6aea2ce35d329e5cdb007ad8,2301EE41,Saurabh Kumar,true,KalamD-106-btech23,Kalam,106,1,male,btech23,2026-11-04 00:20:11.044 IST
+6aea2ce35d329e5cdb007ad9,2301PH20,Banoth Naveen,true,KalamD-128-btech23,Kalam,128,1,male,btech23,2026-11-04 00:20:11.366 IST
+6aea2ce35d329e5cdb007ada,2301MC41,Pravesh Tiwari,true,KalamC-102-btech23,Kalam,102,1,male,btech23,2026-11-04 00:20:11.887 IST
+6aea2ce75d329e5cdb007adb,2301MM34,Rishav Anand,true,KalamD-109-btech23,Kalam,109,1,male,btech23,2026-11-04 00:20:15.496 IST
+6aea2ce85d329e5cdb007adc,2301CT32,Aditya V Singh,true,KalamD-126-btech23,Kalam,126,1,male,btech23,2026-11-04 00:20:16.549 IST
+6aea2ce85d329e5cdb007add,2301EE38,Ajeet Yadav,true,KalamD-019-btech23,Kalam,019,1,male,btech23,2026-11-04 00:20:16.692 IST
+6aea2cec5d329e5cdb007ade,2301CS58,Swapnil Sahoo,true,KalamB-306-btech23,Kalam,306,1,male,btech23,2026-11-04 00:20:20.700 IST
+6aea2cee5d329e5cdb007adf,2301CT22,Devanshu Kumar,true,KalamD-005-btech23,Kalam,005,1,male,btech23,2026-11-04 00:20:22.494 IST
+6aea2cf35d329e5cdb007ae0,2301ME19,Harsh Raj,true,KalamD-003-btech23,Kalam,003,1,male,btech23,2026-11-04 00:20:27.703 IST
+6aea2cf45d329e5cdb007ae1,2301CS12,Chaitanya Kotipalli,true,KalamC-101-btech23,Kalam,101,1,male,btech23,2026-11-04 00:20:28.570 IST
+6aea2cf55d329e5cdb007ae2,2301MM05,Balu Vithanala,true,KalamB-606-btech23,Kalam,606,1,male,btech23,2026-11-04 00:20:29.403 IST
+6aea2cf85d329e5cdb007ae3,2302VL07,Venkata Sai Karthik Perepu,true,KalamB-308-btech23,Kalam,308,1,male,btech23,2026-11-04 00:20:32.608 IST
+6aea2cf85d329e5cdb007ae4,2301PH24,Utpal Raj Ambastha,true,KalamB-411-btech23,Kalam,411,1,male,btech23,2026-11-04 00:20:32.963 IST
+6aea2cf95d329e5cdb007ae5,2301EE05,Akash Ijju,true,KalamB-307-btech23,Kalam,307,1,male,btech23,2026-11-04 00:20:33.226 IST
+6aea2cfe5d329e5cdb007ae6,2301PH07,Ashmit Verma,true,KalamB-621-btech23,Kalam,621,1,male,btech23,2026-11-04 00:20:38.054 IST
+6aea2d045d329e5cdb007ae7,2301CS89,Suvrayan Bandyopadhyay,true,KalamB-410-btech23,Kalam,410,1,male,btech23,2026-11-04 00:20:44.752 IST
+6aea2d0f5d329e5cdb007ae8,2301EE32,Sai Ganesh Sarma Kalva,true,KalamB-408-btech23,Kalam,408,1,male,btech23,2026-11-04 00:20:55.566 IST
+6aea2d105d329e5cdb007ae9,2302VL11,Priyam Mishra,true,KalamB-404-btech23,Kalam,404,1,male,btech23,2026-11-04 00:20:56.212 IST
+6aea2d115d329e5cdb007aea,2302CM03,Naga Satya Navadeep Billa,true,KalamD-015-btech23,Kalam,015,1,male,btech23,2026-11-04 00:20:57.707 IST
+6aea2d135d329e5cdb007aeb,2302MT06,Anil Kumawat,true,KalamB-321-btech23,Kalam,321,1,male,btech23,2026-11-04 00:20:59.194 IST
+6aea2d165d329e5cdb007aec,2301EE47,Suresh Chandra Salvi,true,KalamB-301-btech23,Kalam,301,1,male,btech23,2026-11-04 00:21:02.371 IST
+6aea2d1a5d329e5cdb007aed,2301CS47,Sameer Kumar,true,KalamB-304-btech23,Kalam,304,1,male,btech23,2026-11-04 00:21:06.628 IST
+6aea2d1e5d329e5cdb007aee,2301ME22,Humith Krishna Thupakula,true,KalamD-018-btech23,Kalam,018,1,male,btech23,2026-11-04 00:21:10.778 IST
+6aea2d225d329e5cdb007aef,2301CB32,Omesh Mehta,true,KalamB-614-btech23,Kalam,614,1,male,btech23,2026-11-04 00:21:14.864 IST
+6aea2d2a5d329e5cdb007af0,2301CS55,Sridhanush Suru,true,KalamB-309-btech23,Kalam,309,1,male,btech23,2026-11-04 00:21:22.647 IST
+6aea2d2a5d329e5cdb007af1,2301CE22,Purvesh Vasant Wagh,true,KalamB-406-btech23,Kalam,406,1,male,btech23,2026-11-04 00:21:22.728 IST
+6aea2d325d329e5cdb007af2,2301AI34,Venkata Durga Sathvik Marella,true,KalamB-418-btech23,Kalam,418,1,male,btech23,2026-11-04 00:21:30.661 IST
+6aea2d335d329e5cdb007af3,2301ME41,Priyanshu Priyam,true,KalamD-020-btech23,Kalam,020,1,male,btech23,2026-11-04 00:21:31.287 IST
+6aea2d335d329e5cdb007af4,2301MC12,Kommu Hari Kishan,true,KalamB-611-btech23,Kalam,611,1,male,btech23,2026-11-04 00:21:31.347 IST
+6aea2d335d329e5cdb007af5,2302MT08,Anil Kantam,true,KalamD-004-btech23,Kalam,004,1,male,btech23,2026-11-04 00:21:31.688 IST
+6aea2d335d329e5cdb007af6,2301MC43,Aryaman,true,KalamB-620-btech23,Kalam,620,1,male,btech23,2026-11-04 00:21:31.850 IST
+6aea2d335d329e5cdb007af7,2302VL05,Praful L,true,KalamB-405-btech23,Kalam,405,1,male,btech23,2026-11-04 00:21:31.900 IST
+6aea2d345d329e5cdb007af8,2301CE40,Aravind Chowdary Dobbala,true,KalamD-021-btech23,Kalam,021,1,male,btech23,2026-11-04 00:21:32.370 IST
+6aea2d375d329e5cdb007af9,2301MC37,Gujja Lakshmi Yashasvi Satvik,true,KalamB-619-btech23,Kalam,619,1,male,btech23,2026-11-04 00:21:35.858 IST
+6aea2d385d329e5cdb007afa,2301ME61,Vainateya Kakara,true,KalamB-514-btech23,Kalam,514,1,male,btech23,2026-11-04 00:21:36.330 IST
+6aea2d3b5d329e5cdb007afb,2301CS62,Vineel Kumar Metta,true,KalamB-310-btech23,Kalam,310,1,male,btech23,2026-11-04 00:21:39.907 IST
+6aea2d3d5d329e5cdb007afc,2301MC60,Aditya Onam,true,KalamB-615-btech23,Kalam,615,1,male,btech23,2026-11-04 00:21:41.763 IST
+6aea2d425d329e5cdb007afd,2301CS28,Manuj Kumar Grover,true,KalamB-302-btech23,Kalam,302,1,male,btech23,2026-11-04 00:21:46.655 IST
+6aea2d465d329e5cdb007afe,2301EC37,Sai Vignesh Devarakonda,true,KalamB-314-btech23,Kalam,314,1,male,btech23,2026-11-04 00:21:50.993 IST
+6aea2d505d329e5cdb007aff,2301CB53,Shivesh Chauhan,true,KalamB-318-btech23,Kalam,318,1,male,btech23,2026-11-04 00:22:00.964 IST
+6aea2d525d329e5cdb007b00,2301ME36,Nikhil Natraj Singh,true,KalamB-319-btech23,Kalam,319,1,male,btech23,2026-11-04 00:22:02.269 IST
+6aea2d545d329e5cdb007b01,2301CS07,Anurag Nath,true,KalamB-317-btech23,Kalam,317,1,male,btech23,2026-11-04 00:22:04.918 IST
+6aea2d595d329e5cdb007b02,2301CS36,Praneeth Reddy Gudupally,true,KalamB-702-btech23,Kalam,702,1,male,btech23,2026-11-04 00:22:09.522 IST
+6aea2d5f5d329e5cdb007b03,2301MC44,Sunny Raju Nitnaware,true,KalamB-419-btech23,Kalam,419,1,male,btech23,2026-11-04 00:22:15.963 IST
+6aea2d645d329e5cdb007b04,2301EC36,Pruthvi Raj Kaavali,true,KalamB-315-btech23,Kalam,315,1,male,btech23,2026-11-04 00:22:20.723 IST
+6aea2d6a5d329e5cdb007b05,2301EC15,Naitik,true,KalamB-511-btech23,Kalam,511,1,male,btech23,2026-11-04 00:22:26.031 IST
+6aea2d6a5d329e5cdb007b06,2301CT16,Rakesh Hembram,true,KalamD-007-btech23,Kalam,007,1,male,btech23,2026-11-04 00:22:26.126 IST
+6aea2d6d5d329e5cdb007b07,2302MT03,Shourya,true,KalamB-303-btech23,Kalam,303,1,male,btech23,2026-11-04 00:22:29.248 IST
+6aea2d705d329e5cdb007b08,2301CS10,Ashutosh Kanojia,true,KalamB-709-btech23,Kalam,709,1,male,btech23,2026-11-04 00:22:32.091 IST
+6aea2d755d329e5cdb007b09,2301ME59,Jaysmith Das,true,KalamB-403-btech23,Kalam,403,1,male,btech23,2026-11-04 00:22:37.071 IST
+6aea2d885d329e5cdb007b0a,2301CT24,Amit Kumar,true,KalamB-311-btech23,Kalam,311,1,male,btech23,2026-11-04 00:22:56.726 IST
+6aea2d8c5d329e5cdb007b0b,2301CE14,Kanishq Bekadia,true,KalamB-513-btech23,Kalam,513,1,male,btech23,2026-11-04 00:23:00.252 IST
+6aea2d945d329e5cdb007b0c,2301ME69,Sai Goutham Gangala,true,KalamB-316-btech23,Kalam,316,1,male,btech23,2026-11-04 00:23:08.553 IST
+6aea2da35d329e5cdb007b0d,2301MM02,Abhinay Maurya,true,KalamB-312-btech23,Kalam,312,1,male,btech23,2026-11-04 00:23:23.373 IST
+6aea2da95d329e5cdb007b0e,2302MC09,Sunny Kumar,true,KalamB-305-btech23,Kalam,305,1,male,btech23,2026-11-04 00:23:29.595 IST
+6aea2dac5d329e5cdb007b0f,2301CT33,Raju Kumar,true,KalamB-420-btech23,Kalam,420,1,male,btech23,2026-11-04 00:23:32.430 IST
+6aea2dad5d329e5cdb007b10,2301CB28,Mohit Kumar,true,KalamD-031-btech23,Kalam,031,1,male,btech23,2026-11-04 00:23:33.573 IST
+6aea2dad5d329e5cdb007b11,2301CE33,Amritansh Rai,true,KalamB-416-btech23,Kalam,416,1,male,btech23,2026-11-04 00:23:33.630 IST
+6aea2dae5d329e5cdb007b12,2302MT05,Pt Bhoodev Bhushan Mishra,true,KalamD-012-btech23,Kalam,012,1,male,btech23,2026-11-04 00:23:34.070 IST
+6aea2db05d329e5cdb007b13,2301CE27,Shivam Modi,true,KalamD-030-btech23,Kalam,030,1,male,btech23,2026-11-04 00:23:36.011 IST
+6aea2db05d329e5cdb007b14,2301CT25,Ansh Gupta,true,KalamB-313-btech23,Kalam,313,1,male,btech23,2026-11-04 00:23:36.990 IST
+6aea2db75d329e5cdb007b15,2301AI05,Bala Sri Hari Prasad Kokkeragadda,true,KalamD-032-btech23,Kalam,032,1,male,btech23,2026-11-04 00:23:43.072 IST
+6aea2db75d329e5cdb007b16,2301CE56,Himanshu Raj,true,KalamB-417-btech23,Kalam,417,1,male,btech23,2026-11-04 00:23:43.613 IST
+6aea2db85d329e5cdb007b17,2301EE42,Mayank Manas,true,KalamD-001-btech23,Kalam,001,1,male,btech23,2026-11-04 00:23:44.753 IST
+6aea2dbd5d329e5cdb007b18,2303ME13,Tarun Lokjeet,true,KalamB-421-btech23,Kalam,421,1,male,btech23,2026-11-04 00:23:49.135 IST
+6aea2dc55d329e5cdb007b19,2301CB15,Harsh Sharma,true,KalamB-506-btech23,Kalam,506,1,male,btech23,2026-11-04 00:23:57.240 IST
+6aea2dc85d329e5cdb007b1a,2301ME54,Vinod Singh Rathore,true,KalamB-407-btech23,Kalam,407,1,male,btech23,2026-11-04 00:24:00.554 IST
+6aea2dd35d329e5cdb007b1b,2301PH27,Rahul Katravath,true,KalamB-715-btech23,Kalam,715,1,male,btech23,2026-11-04 00:24:11.357 IST
+6aea2dd75d329e5cdb007b1c,2301EE30,Arya Prakash,true,KalamD-013-btech23,Kalam,013,1,male,btech23,2026-11-04 00:24:15.155 IST
+6aea2ddd5d329e5cdb007b1d,2301ME32,Md Imran Hassan,true,KalamB-521-btech23,Kalam,521,1,male,btech23,2026-11-04 00:24:21.577 IST
+6aea2de35d329e5cdb007b1e,2301CB26,Md. Hamid,true,KalamB-401-btech23,Kalam,401,1,male,btech23,2026-11-04 00:24:27.952 IST
+6aea2de85d329e5cdb007b1f,2301CS30,Maruthi Jayachandra Busakani,true,KalamB-517-btech23,Kalam,517,1,male,btech23,2026-11-04 00:24:32.474 IST
+6aea2dea5d329e5cdb007b20,2302PC07,Krish Dewangan,true,KalamB-409-btech23,Kalam,409,1,male,btech23,2026-11-04 00:24:34.952 IST
+6aea2df95d329e5cdb007b21,2301MM03,Ajay Kumar Saini,true,KalamB-402-btech23,Kalam,402,1,male,btech23,2026-11-04 00:24:49.953 IST
+6aea2e085d329e5cdb007b22,2301AI25,Srisanth Daggumelli,true,KalamD-014-btech23,Kalam,014,1,male,btech23,2026-11-04 00:25:04.551 IST
+6aea2e115d329e5cdb007b23,2301CB59,Dinesh Guguloth,true,KalamB-502-btech23,Kalam,502,1,male,btech23,2026-11-04 00:25:13.551 IST
+6aea2e115d329e5cdb007b24,2301CE44,Kaustuv Anand,true,KalamD-017-btech23,Kalam,017,1,male,btech23,2026-11-04 00:25:13.848 IST
+6aea2e125d329e5cdb007b25,2301ME44,Rohit Makde,true,KalamD-010-btech23,Kalam,010,1,male,btech23,2026-11-04 00:25:14.070 IST
+6aea2e135d329e5cdb007b26,2301ME79,Priyadarshi Prince,true,KalamB-503-btech23,Kalam,503,1,male,btech23,2026-11-04 00:25:15.202 IST
+6aea2e1d5d329e5cdb007b27,2301ME72,Arsalan Azmat,true,KalamB-519-btech23,Kalam,519,1,male,btech23,2026-11-04 00:25:25.407 IST
+6aea2e2e5d329e5cdb007b28,2301CS15,Dheeraj Dharavath,true,KalamB-515-btech23,Kalam,515,1,male,btech23,2026-11-04 00:25:42.912 IST
+6aea2e375d329e5cdb007b29,2301CE26,Shad Modassir,true,KalamB-520-btech23,Kalam,520,1,male,btech23,2026-11-04 00:25:51.740 IST
+6aea2e395d329e5cdb007b2a,2301ME58,Anil Naik Khethavath,true,KalamD-011-btech23,Kalam,011,1,male,btech23,2026-11-04 00:25:53.152 IST
+6aea2e485d329e5cdb007b2b,2301MM35,Vishal Gowtham Mogilicherla,true,KalamB-613-btech23,Kalam,613,1,male,btech23,2026-11-04 00:26:08.367 IST
+6aea2e4d5d329e5cdb007b2c,2301MM30,Hemanth Tejavath,true,KalamB-612-btech23,Kalam,612,1,male,btech23,2026-11-04 00:26:13.153 IST
+6aea2e555d329e5cdb007b2d,2303ME14,Saikumar Malavath,true,KalamB-501-btech23,Kalam,501,1,male,btech23,2026-11-04 00:26:21.630 IST
+6aea2e685d329e5cdb007b2e,2301CS63,Vivek Kumar,true,KalamB-510-btech23,Kalam,510,1,male,btech23,2026-11-04 00:26:40.029 IST
+6aea2e775d329e5cdb007b2f,2301CE36,Yashveer Aryan,true,KalamB-516-btech23,Kalam,516,1,male,btech23,2026-11-04 00:26:55.640 IST
+6aea2e825d329e5cdb007b30,2301EC20,Priyanshu Gupta,true,KalamD-026-btech23,Kalam,026,1,male,btech23,2026-11-04 00:27:06.934 IST
+6aea2e8c5d329e5cdb007b31,2301EE33,Sai Parameshwar Naik Bannoth,true,KalamB-705-btech23,Kalam,705,1,male,btech23,2026-11-04 00:27:16.878 IST
+6aea2e8e5d329e5cdb007b32,2301CB14,Divyanshu Singh,true,KalamB-601-btech23,Kalam,601,1,male,btech23,2026-11-04 00:27:18.517 IST
+6aea2ea95d329e5cdb007b33,2302GT03,Saurabh Kumar,true,KalamB-610-btech23,Kalam,610,1,male,btech23,2026-11-04 00:27:45.094 IST
+6aea2ee75d329e5cdb007b34,2301EC41,Aravind Jatavath,true,KalamB-704-btech23,Kalam,704,1,male,btech23,2026-11-04 00:28:47.574 IST
+6aea2f135d329e5cdb007b35,2301EC49,Udit Sharma,true,KalamD-029-btech23,Kalam,029,1,male,btech23,2026-11-04 00:29:31.664 IST
+6aea2f175d329e5cdb007b36,2301CB11,Devesh Raj,true,KalamD-027-btech23,Kalam,027,1,male,btech23,2026-11-04 00:29:35.361 IST
+6aea2f265d329e5cdb007b37,2301EC38,Satyam Chauhan,true,KalamD-028-btech23,Kalam,028,1,male,btech23,2026-11-04 00:29:50.990 IST
+6aea2f445d329e5cdb007b38,2301EC06,Anupam Singh,true,KalamB-602-btech23,Kalam,602,1,male,btech23,2026-11-04 00:30:20.211 IST
+6aea2f7b5d329e5cdb007b39,2301EC42,Md Sohail,true,KalamB-706-btech23,Kalam,706,1,male,btech23,2026-11-04 00:31:15.913 IST
+6aea2f945d329e5cdb007b3a,2301CE51,Aditya Prakash,true,KalamB-608-btech23,Kalam,608,1,male,btech23,2026-11-04 00:31:40.306 IST
+6aea2fed5d329e5cdb007b3b,2301PH04,Amit Kumar,true,KalamB-616-btech23,Kalam,616,1,male,btech23,2026-11-04 00:33:09.284 IST
+6aea306b5d329e5cdb007b3c,2301PH30,Nikhil Pratap Singh,true,KalamB-617-btech23,Kalam,617,1,male,btech23,2026-11-04 00:35:15.077 IST
+6aea30c75d329e5cdb007b3d,2301CE50,Mohammad Meraj Ahmad,true,KalamB-604-btech23,Kalam,604,1,male,btech23,2026-11-04 00:36:47.642 IST
+6aea30f35d329e5cdb007b3e,2301AI36,Vivek Katuri,true,KalamB-607-btech23,Kalam,607,1,male,btech23,2026-11-04 00:37:31.777 IST
+6aea32555d329e5cdb007b3f,2302CS09,Rithvik Konidena,true,KalamB-711-btech23,Kalam,711,1,male,btech23,2026-11-04 00:43:25.275 IST
+6aea33415d329e5cdb007b40,2301CS27,Kumar Sarvagya,true,KalamD-404-btech23,Kalam,404,1,male,btech23,2026-11-04 00:47:21.956 IST
+6aea35865d329e5cdb007b41,2301MM10,Md Hamid Alam,true,KalamB-710-btech23,Kalam,710,1,male,btech23,2026-11-04 00:57:02.774 IST
+6aea385c68b0903be8270980,2301ME42,Raj Shekhar,true,KalamB-605-btech23,Kalam,605,1,male,btech23,2026-11-04 01:09:08.428 IST
+6aea385d68b0903be8270981,2302MT01,Aditya Thurwal,true,KalamB-609-btech23,Kalam,609,1,male,btech23,2026-11-04 01:09:09.034 IST
+6aea3cfb68b0903be8270982,2301ME43,Ramu Pasula,true,KalamB-720-btech23,Kalam,720,1,male,btech23,2026-11-04 01:28:51.235 IST
+6aea3f0768b0903be8270983,2301ME20,Hemanth Venkata Sai Jonnadula,true,KalamB-703-btech23,Kalam,703,1,male,btech23,2026-11-04 01:37:35.761 IST
+6aea449868b0903be8270984,2301CB02,Abhishek Kumawat,true,KalamB-603-btech23,Kalam,603,1,male,btech23,2026-11-04 02:01:20.660 IST
+6aea515868b0903be8270985,2303ME05,Devasish Vaddi,true,KalamB-618-btech23,Kalam,618,1,male,btech23,2026-11-04 02:55:44.940 IST
+6aea8fbd68b0903be8270986,2301AI54,Rohit Roy,true,KalamB-712-btech23,Kalam,712,1,male,btech23,2026-11-04 07:21:57.305 IST
+retained_room,2302MC03,Chirag Rana,,KalamC-216-btech23,,216,,,,
+retained_room,2302MC10,P. Veda Laxman,,KalamC-216-btech23,,216,,,,
+retained_room,2302MC07,Rishit Dutta,,KalamC-217-btech23,,217,,,,
+retained_room,2301CS57,Suman Kumar,,KalamC-217-btech23,,217,,,,
+retained_room,2303ME02,Abhimanyu Kumar,,KalamC-206-btech23,,206,,,,
+retained_room,2301ME15,Dev Kumar,,KalamC-206-btech23,,206,,,,
+retained_room,2301AI40,Atul Raj Chaudhary,,KalamC-210-btech23,,210,,,,
+retained_room,2301AI39,Himanshu Kumar,,KalamC-210-btech23,,210,,,,
+retained_room,2301CS23,Keshav,,KalamC-221-btech23,,221,,,,
+retained_room,2301AI21,Shobhit,,KalamC-221-btech23,,221,,,,
+retained_room,2301CS77,Chaitanya Saagar,,KalamC-311-btech23,,311,,,,
+retained_room,2301EE25,Saubhagya,,KalamC-311-btech23,,311,,,,
+retained_room,2301MC58,Aditya Aryan,,KalamC-319-btech23,,319,,,,
+retained_room,2301EC07,Arpit,,KalamC-319-btech23,,319,,,,
+retained_room,2301ME37,Piyush Jatoliya,,KalamC-504-btech23,,504,,,,
+retained_room,2301ME23,Jatin,,KalamC-504-btech23,,504,,,,
+retained_room,2301CS04,Aman Kumar Gupta,,KalamC-603-btech23,,603,,,,
+retained_room,2301CS51,Shivam Singh,,KalamC-603-btech23,,603,,,,
+retained_room,2301AI51,Advait Deshmukh,,KalamC-605-btech23,,605,,,,
+retained_room,2301AI57,Aditya Mehrotra,,KalamC-605-btech23,,605,,,,
+retained_room,2301MM11,Nishanth Kumar,,KalamC-608-btech23,,608,,,,
+retained_room,2302CS03,Nikhil Somara,,KalamC-608-btech23,,608,,,,
+retained_room,2301CS03,Abhinav Reddy Sudini,,KalamC-609-btech23,,609,,,,
+retained_room,2301CS21,Hemanth Gupta,,KalamC-609-btech23,,609,,,,
+retained_room,2301CS52,Shreyas Jaiswal,,KalamC-610-btech23,,610,,,,
+retained_room,2301CS08,Arnav Raddy,,KalamC-610-btech23,,610,,,,
+retained_room,2301CS92,Chirag Ashish Agrawal,,KalamC-614-btech23,,614,,,,
+retained_room,2301CS95,Siddharth Anand,,KalamC-614-btech23,,614,,,,
+retained_room,2301CS53,Sreyas Kotha,,KalamC-617-btech23,,617,,,,
+retained_room,2301CS02,Aayush Sheth,,KalamC-617-btech23,,617,,,,
+retained_room,2303ME04,Chiranjeeb Debata,,KalamC-720-btech23,,720,,,,
+retained_room,2301CB04,Amit Kumat,,KalamC-720-btech23,,720,,,,
+retained_room,2301MC61,Ashish Kumar,,KalamD-002-btech23,,002,,,,
+retained_room,2301CT28,Khushvant Chouhan,,KalamD-002-btech23,,002,,,,
+retained_room,2301AI53,Akshat Jha,,KalamD-033-btech23,,033,,,,
+retained_room,2301CE10,Garvit Nahata,,KalamD-033-btech23,,033,,,,
+retained_room,2301EC28,PALUCHANI SIVA DHANUSH REDDY,,KalamD-116-btech23,,116,,,,
+retained_room,2301EC50,Korak Basu,,KalamD-116-btech23,,116,,,,
+retained_room,2302CM09,Sai Suhas billa,,KalamD-209-btech23,,209,,,,
+retained_room,2301EC43,Prudvi karthik,,KalamD-209-btech23,,209,,,,
+retained_room,2301EE17,Mohith Annadatha,,KalamD-215-btech23,,215,,,,
+retained_room,2301ME39,Praveen Vandrasi,,KalamD-215-btech23,,215,,,,
+retained_room,2301AI09,Dundi Kuladeepeswar Mallela,,KalamD-219-btech23,,219,,,,
+retained_room,2301MC14,Lakshmi Narasimham Talluri,,KalamD-219-btech23,,219,,,,
+retained_room,2301AI26,Suryawanshi Sujal Balu,,KalamD-222-btech23,,222,,,,
+retained_room,2301AI29,Pitta Tanuj,,KalamD-222-btech23,,222,,,,
+retained_room,2301EE59,Deveshsingh Kuldeepsingh Tomar,,KalamD-307-btech23,,307,,,,
+retained_room,2301CT10,Eshu,,KalamD-307-btech23,,307,,,,
+retained_room,2301PH05,Angaanba Ningthoujam,,KalamD-308-btech23,,308,,,,
+retained_room,2301EE60,Ritesh Dhanda,,KalamD-308-btech23,,308,,,,
+retained_room,2301PH18,Yashraj Singh Thakur,,KalamD-315-btech23,,315,,,,
+retained_room,2301PH21,Neerati Pranay,,KalamD-315-btech23,,315,,,,
+retained_room,2301CS09,Aryan Phad,,KalamD-401-btech23,,401,,,,
+retained_room,2301CS05,Anish Raghashetty,,KalamD-401-btech23,,401,,,,
+retained_room,2301AI31,Tejeshwar Singh Minhas,,KalamD-421-btech23,,421,,,,
+retained_room,2301AI02,Anshurup gupta,,KalamD-421-btech23,,421,,,,
+retained_room,2301EC21,B Puneeth Reddy,,KalamD-730-btech23,,730,,,,
+retained_room,2301EC25,Shaswat Pandey,,KalamD-730-btech23,,730,,,,

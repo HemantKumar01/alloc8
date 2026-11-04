@@ -1,13 +1,13 @@
 function getRollNumber(idTokenClaims) {
   if (!idTokenClaims) return "";
-  let emailId = idTokenClaims.email;
+  const emailId = idTokenClaims.email || idTokenClaims.preferred_username || "";
   const mailParts = emailId.split("@")[0].split("_");
   const rollNumber =
     mailParts[0].startsWith("2")
       ? mailParts[0]
       : mailParts[1];
   if (rollNumber == null) {
-    return "Error encountered, please report this to any of the Technical Secretaries along with your Outlook ID and roll number";
+    return "";
   } else {
     return rollNumber;
   }

@@ -1,84 +1,28 @@
-import React, { Children, Suspense } from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router";
 import PasscodeGate from "./components/PasscodeGate.jsx";
 import Spinner from "./components/spinner.jsx";
-import {
-  Home,
-  WaitingPage,
-  Others,
-  Register,
-  AlottedRooms,
-  FresherSuccess,
-  Freshers,
-  Success,
-  Error,
-} from "./pages/index.js";
-import Header from "@/components/Header";
+import AllocationRedirect from "./components/AllocationRedirect.jsx";
+
+const Home = React.lazy(() => import("./pages/Home"));
+const Success = React.lazy(() => import("./pages/Success"));
+const Error = React.lazy(() => import("./pages/Error"));
 // Outlook Auth
 import { MsalProvider } from "@azure/msal-react";
 import { PublicClientApplication, EventType } from "@azure/msal-browser";
 import { msalConfig } from "./authConfig.js";
-import SMPPage from "./pages/SMP";
-import GetSMP from "./pages/getSMP";
-// import SmpForm from "./components/SmpForm";
 
 const router = createBrowserRouter([
   {
     element: <PasscodeGate />,
     errorElement: <PasscodeGate errorElement={<Error />} />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-        errorElement: <Error />,
-      },
-      /* {
-        path: "/Register",
-        element: <Register />,
-        errorElement: <Error />,
-      }, */
-      {
-        path: "/allotroom",
-        element: <Others />,
-        errorElement: <Error />,
-      },
-      /* {
-         path: "/smpform",
-         element: <><Header /><SmpForm /></>,
-         errorElement: <Error />,
-       }, */
-      {
-        path: "/success",
-        element: <Success />,
-        errorElement: <Error />,
-      },
-      {
-        path: "/smp",
-        element: <SMPPage />,
-        errorElement: <Error />,
-      },
-      {
-        path: "/getSMP",
-        element: <GetSMP />,
-        errorElement: <Error />,
-      },
-      /* {
-        path: "/waiting",
-        element: <WaitingPage />,
-        errorElement: <Error />,
-      },
-      {
-        path: "/freshers",
-        element: <Freshers />,
-        errorElement: <Error />,
-      },
-      {
-        path: "/fresher/success",
-        element: <FresherSuccess />,
-        errorElement: <Error />,
-      }, */
+      { path: "/", element: <Home />, errorElement: <Error /> },
+      { path: "/success", element: <Success />, errorElement: <Error /> },
+      // Old booking, registration and SMP links all open the static results.
+      { path: "*", element: <AllocationRedirect /> },
     ],
   },
 ]);

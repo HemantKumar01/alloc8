@@ -10,10 +10,10 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const isAuthenticated = useIsAuthenticated();
-  const { instance, accounts } = useMsal();
+  const { instance } = useMsal();
   useEffect(() => {
     if (isAuthenticated) {
-      navigate("/allotroom");
+      navigate("/success", { replace: true });
     }
   }, [isAuthenticated, navigate]);
 
